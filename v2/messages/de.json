@@ -1,0 +1,65 @@
+{
+  "About": {
+    "p1": "Ich bin Abdullah. Ich wurde in Deutschland geboren und bin in der Türkei aufgewachsen. Eine Zeit lang interessierte ich mich für islamische Wissenschaften; heute liegt mein Fokus auf Software.",
+    "p2": "Ich mache Fortschritte in der Full-Stack-Entwicklung und wechsle vollständig in das JavaScript-Ökosystem. Ich arbeite mit React, Next.js, TypeScript und Node.js. Sauberer Code, nachhaltige Struktur und verständliche Architektur sind Prinzipien, die ich in jedem Projekt sorgfältig verfolge.",
+    "p3": "Software ist für mich kein Beruf; es ist die Art, meine Vorstellungen in die Realität umzusetzen. Ich schreibe Code, um zu lernen, zu entwickeln und Spuren zu hinterlassen.",
+    "p4": "Ständige Weiterentwicklung ist für mich kein Ziel, sondern eine Gewohnheit. An einem Tag vereinfache ich die API-Architektur, am nächsten Tag probiere ich ein neues UI-Framework aus. Ich bin diszipliniert, aber flexibel, neugierig, aber wählerisch. Ich arbeite gerne allein, aber auch mit einem guten Team an einer gemeinsamen Vision.",
+    "p5": "Mein Ziel ist es nicht nur, ein guter Entwickler zu sein, sondern bleibenden und wertvollen Beitrag zu leisten.",
+    "title": "Wer bin ich?"
+  },
+  "Metadata": {
+    "title": "Abdullah V. ÇOŞKUN | Full Stack Web Developer",
+    "name": "Abdullah V. ÇOŞKUN",
+    "description": "Full Stack Web Developer. Entwicklung moderner Webanwendungen mit React, Next.js, TypeScript und Node.js. Fokus auf sauberen Code, nachhaltige Architektur und benutzerzentrierte Lösungen."
+  },
+  "SidebarNav": {
+    "About": "Über mich",
+    "Experiences": "Erfahrungen",
+    "Projects": "Projekte",
+    "Skills": "Fähigkeiten"
+  },
+  "Projects": {
+    "title": "Projekte",
+    "noProjects": "Derzeit keine Projekte gefunden. Token zu .env hinzufügen und App neu starten.",
+    "noImage": "Kein Bild",
+    "github": "GitHub",
+    "liveDemo": "Live Demo"
+  },
+  "Skills": {
+    "title": "Fähigkeiten",
+    "subtitle": "Technologien und Tools, mit denen ich arbeite",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "ai": "KI & Automatisierung",
+    "tools": "Werkzeuge",
+    "languages": "Sprachen",
+    "turkish": "Türkisch",
+    "german": "Deutsch",
+    "english": "Englisch"
+  },
+  "experience": {
+    "title": "Erfahrungen",
+    "items": {
+      "fullstack": {
+        "title": "Full Stack Web Developer",
+        "company": "Freelancer",
+        "description": "Entwickelte Full-Stack-Projekte mit React, Node.js und TypeScript. Fokussiert auf die Erstellung leistungsstarker, wiederverwendbarer und wartbarer Strukturen. Entwurf benutzerfreundlicher Schnittstellen mit modernen UI/UX-Prinzipien."
+      },
+      "frontend": {
+        "title": "Frontend Developer",
+        "company": "Patika+ Bootcamp",
+        "description": "Entwickelte React-Projekte mit Vite-Infrastruktur. Erstellte responsive, moderne UIs mit Material UI und Tailwind CSS. Effektive Verwaltung von Versionskontrollprozessen mit Git und GitHub."
+      },
+      "backend": {
+        "title": "Backend Developer",
+        "company": "Patika+ Bootcamp",
+        "description": "Entwickelte RESTful APIs mit .NET Core. Verwaltung von Datenbankoperationen mit Entity Framework Core im Code-First-Ansatz. Implementierte erweiterte Backend-Strukturen wie JWT, Middleware und Service-Architektur."
+      },
+      "teacher": {
+        "title": "Erzieher & Arabischlehrer",
+        "company": "Medresa",
+        "description": "11 Jahre lang studierte und lehrte ich klassische islamische Wissenschaften wie Sarf, Nahiv und Fiqh. In den letzten 2 Jahren unterrichtete ich frühkindliche Bildung für 4-6-Jährige. Gewann pädagogische Kompetenz, Geduld, Kommunikationsfähigkeiten und starke Präsentationsfähigkeiten in dieser Zeit."
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.skills-main-container {
+  width: 55%;
+  text-align: justify;
+}
+
+.skills-category-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-category {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 12px rgba(0, 224, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.skill-category:hover {
+  box-shadow: 0 0 10px #00e0ff20;
+}
+
+.skill-category h3 {
+  font-size: 1.25rem;
+  color: #00e0ff;
+  margin-bottom: 16px;
+}
+
+.skills-item-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  gap: 6px;
+}
+
+.skill-item i {
+  font-size: 2.2rem;
+  color: #00e0ff;
+  transition: transform 0.3s ease;
+}
+
+.skill-item i:hover {
+  transform: scale(1.2);
+}
+
+.skill-item span {
+  font-size: 0.85rem;
+  text-align: center;
+  color: #a0aec0;
+}
+
+.skill-item svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+}
+
+.skill-item svg:hover {
+  transform: scale(1.2);
+}
+
+/* 💻 Laptop - 1200px ve altı */
+@media (max-width: 1200px) {
+  .skills-main-container {
+    width: 65%;
+  }
+}
+
+/* 📱 Tablet - 992px ve altı */
+@media (max-width: 992px) {
+  .skills-main-container {
+    width: 90%;
+  }
+}
+
+/* 📱 Büyük Telefon - 768px ve altı */
+@media (max-width: 768px) {
+  .skills-main-container {
+    width: 90%;
+  }
+}
+
+/* 📱 Küçük Telefon - 576px ve altı */
+@media (max-width: 576px) {
+  .skills-main-container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,10 @@
+.social-links-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.social-links-container a:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
