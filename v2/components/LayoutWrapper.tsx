@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Sidebar from "@/components/layout/Sidebar";
 import MainContainer from "@/components/layout/MainContainer";
 import HamburgerButton from "@/components/elements/HamburgerButton";
+import Cursor from "@/components/elements/Cursor";
 
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -42,6 +43,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
 
   return (
     <>
+      <Cursor />
       <HamburgerButton ref={hamburgerButtonRef} isOpen={isSidebarOpen} onClick={toggleSidebar} />
       <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
       <MainContainer>{children}</MainContainer>
