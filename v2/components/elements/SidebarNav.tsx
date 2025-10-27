@@ -55,10 +55,10 @@ export default function SidebarNav({ setIsOpen }: SidebarNavProps = {}) {
     const baseClasses = "w-fit inline-block px-1 transition-all duration-300 origin-right";
 
     if (isActive) {
-      return `${baseClasses} text-text scale-110 drop-shadow-[0_0_10px_rgba(97,218,251,0.5)] underline underline-offset-4 decoration-sky-500`;
+      return `${baseClasses} text-text scale-110 cursor-target drop-shadow-[0_0_10px_rgba(97,218,251,0.5)] underline underline-offset-4 decoration-sky-500`;
     }
 
-    return `${baseClasses} hover:text-text hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(97,218,251,0.5)]`;
+    return `${baseClasses} hover:text-text cursor-target hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(97,218,251,0.5)]`;
   };
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -68,7 +68,7 @@ export default function SidebarNav({ setIsOpen }: SidebarNavProps = {}) {
   };
 
   return (
-    <nav className="flex flex-col items-end gap-2 mt-10 text-secondaryText text-lg md:text-xl font-bold text-right">
+    <nav className="flex flex-col items-end gap-2 mt-10 text-secondaryText text-lg md:text-xl font-bold text-right ">
       <a href="#about" className={getLinkClasses("about")} onClick={handleClick}>
         {t("About")}
       </a>

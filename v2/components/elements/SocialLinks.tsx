@@ -32,7 +32,7 @@ export default function SocialLinks() {
           rel="noopener noreferrer"
           aria-label={label}
           className="hover:text-sky-500 transition-colors duration-300 hover:scale-110">
-          <Icon className="text-2xl md:text-3xl text-text" />
+          <Icon className="text-2xl md:text-3xl text-text cursor-target" />
         </a>
       ))}
     </div>

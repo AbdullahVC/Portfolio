@@ -47,7 +47,7 @@ export default async function Projects() {
                     <a
                       href={r.url}
                       target="_blank"
-                      className="font-semibold text-base md:text-lg hover:underline">
+                      className="font-semibold text-base md:text-lg hover:underline cursor-target">
                       {r.name}
                     </a>
                   </div>
@@ -83,7 +83,7 @@ export default async function Projects() {
                     <a
                       href={r.url}
                       target="_blank"
-                      className="inline-flex items-center gap-1 border border-text rounded-lg px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm hover:border-sky-500 hover:text-sky-500 hover:bg-sky-500/10 text-text transition">
+                      className="inline-flex items-center gap-1 border border-text rounded-lg px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm hover:border-sky-500 hover:text-sky-500 hover:bg-sky-500/10 text-text transition cursor-target">
                       <Github size={14} className="md:w-4 md:h-4" /> GitHub
                     </a>
 
@@ -91,7 +91,7 @@ export default async function Projects() {
                       <Link
                         href={r.homepageUrl}
                         target="_blank"
-                        className="inline-flex items-center gap-1 border border-text rounded-lg px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm hover:border-sky-500 hover:text-sky-500 hover:bg-sky-500/10 text-text transition">
+                        className="inline-flex items-center gap-1 border border-text rounded-lg px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm hover:border-sky-500 hover:text-sky-500 hover:bg-sky-500/10 text-text transition cursor-target">
                         <ExternalLink size={14} className="md:w-4 md:h-4" /> Live
                       </Link>
                     )}

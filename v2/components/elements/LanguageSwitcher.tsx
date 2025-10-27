@@ -84,7 +84,6 @@ export default function LanguageSwitcher() {
     const newPath = `/${newLocale}${pathWithoutLocale}`;
 
     router.push(newPath);
-    setIsOpen(false);
   };
 
   return (
@@ -95,7 +94,7 @@ export default function LanguageSwitcher() {
         className="w-10 h-10 md:w-8 md:h-8 rounded-full 
                    flex items-center justify-center text-2xl hover:bg-slate-700/50 
                    transition-all duration-200 hover:scale-110 hover:border-primary/50
-                   hover:drop-shadow-[0_0_10px_rgba(97,218,251,0.3)]"
+                   hover:drop-shadow-[0_0_10px_rgba(97,218,251,0.3)] cursor-target"
         title={currentLanguage.name}>
         <FlagIcon country={currentLanguage.flag} />
       </button>
@@ -107,14 +106,14 @@ export default function LanguageSwitcher() {
           <div className="fixed inset-0 z-10" onClick={() => setIsOpen(false)} />
 
           {/* Bayraklar - Direkt aşağıya sıralı */}
-          <div className="absolute top-12 left-0 gap-2 md:gap-3 z-20 flex flex-col">
+          <div className="absolute top-full left-0 mt-3 gap-3 z-20 flex flex-col">
             {languages
               .filter((lang) => lang.code !== locale)
               .map((lang) => (
                 <button
                   key={lang.code}
                   onClick={() => handleLanguageChange(lang.code)}
-                  className={`w-10 h-10 md:w-8 md:h-8 rounded-full flex items-center justify-center text-2xl transition-all duration-200 hover:bg-slate-700/50 hover:scale-110 hover:border-primary/50 hover:drop-shadow-[0_0_10px_rgba(97,218,251,0.3)]`}>
+                  className={`w-10 h-10 md:w-8 md:h-8 rounded-full flex items-center justify-center text-2xl transition-all duration-200 hover:bg-slate-700/50 hover:scale-110 hover:border-primary/50 hover:drop-shadow-[0_0_10px_rgba(97,218,251,0.3)] cursor-target`}>
                   <FlagIcon country={lang.flag} />
                 </button>
               ))}

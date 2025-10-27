@@ -9,7 +9,7 @@ import routing from "@/i18n/routing";
 
 import "@/app/[locale]/globals.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
-
+import TargetCursor from "@/components/elements/TargetCursor";
 // Static params
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -164,6 +164,7 @@ export default async function RootLayout({
       </head>
       <body className="antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <TargetCursor />
           <LayoutWrapper>{children}</LayoutWrapper>
         </NextIntlClientProvider>
       </body>
