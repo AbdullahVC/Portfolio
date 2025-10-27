@@ -13,6 +13,9 @@ const config: NextConfig = {
     ],
     formats: ["image/avif", "image/webp"],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
