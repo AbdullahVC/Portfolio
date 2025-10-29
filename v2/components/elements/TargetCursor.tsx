@@ -39,6 +39,12 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
   useEffect(() => {
     if (!cursorRef.current) return;
 
+    // Mobil ve tablette cursor'u devre dışı bırak
+    const isMobileOrTablet = window.innerWidth < 1024;
+    if (isMobileOrTablet) {
+      return;
+    }
+
     const originalCursor = document.body.style.cursor;
     if (hideDefaultCursor) {
       document.body.style.cursor = "none";

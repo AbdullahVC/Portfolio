@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import SocialLinks from "../elements/SocialLinks";
 
 export default function About() {
   const t = useTranslations("About");
@@ -20,6 +21,8 @@ export default function About() {
         ))}
       </div>
       <p className="mt-4 text-base md:text-lg font-semibold text-white">"{t("p5")}"</p>
+
+      <SocialLinks />
     </section>
   );
 }

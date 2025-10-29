@@ -23,7 +23,7 @@ const links = [
 
 export default function SocialLinks() {
   return (
-    <div className="flex justify-end gap-3 md:gap-4 mt-10 mb-6 md:mb-0 text-secondaryText">
+    <div className="flex justify-end gap-3 md:gap-4 mt-10 mb-6 md:mb-0 text-secondaryText lg:hidden">
       {links.map(({ href, Icon, label }) => (
         <a
           key={label}

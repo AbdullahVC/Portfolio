@@ -14,7 +14,7 @@ const HamburgerButton = forwardRef<HTMLButtonElement, HamburgerButtonProps>(
       <button
         ref={ref}
         onClick={onClick}
-        className="fixed top-4 left-4 z-50 lg:hidden 
+        className="hidden fixed top-4 left-4 z-50 lg:hidden 
                    w-11 h-11 rounded-full bg-slate-800/50 backdrop-blur-md
                    border border-slate-700/50 flex items-center justify-center
                    hover:bg-slate-700/70 hover:border-sky-500/50

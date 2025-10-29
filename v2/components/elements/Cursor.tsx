@@ -4,6 +4,12 @@ import { useEffect } from "react";
 
 export default function Cursor() {
   useEffect(() => {
+    // Mobil ve tablette cursor'u devre dışı bırak
+    const isMobileOrTablet = window.innerWidth < 1024;
+    if (isMobileOrTablet) {
+      return;
+    }
+
     const cursor = document.querySelector(".cursor") as HTMLElement;
     if (!cursor) return;
 
