@@ -7,23 +7,19 @@ import {
   FaXTwitter,
   FaWhatsapp,
 } from "react-icons/fa6";
+import { TbFileCv } from "react-icons/tb";
 
 const links = [
+  { href: "/cv.pdf", Icon: TbFileCv, label: "CV" },
   { href: "https://github.com/AbdullahVC", Icon: FaGithub, label: "GitHub" },
   { href: "mailto:info@abdullahvcoskun.dev", Icon: FaEnvelope, label: "Email" },
   { href: "https://wa.me/905373545793", Icon: FaWhatsapp, label: "WhatsApp" },
   { href: "https://www.linkedin.com/in/abdullahvcoskun/", Icon: FaLinkedin, label: "LinkedIn" },
-  {
-    href: "https://www.instagram.com/abdullahveyselcoskun/",
-    Icon: FaInstagram,
-    label: "Instagram",
-  },
-  { href: "https://twitter.com/abdullahvcoskun", Icon: FaXTwitter, label: "Twitter" },
 ];
 
 export default function SocialLinks() {
   return (
-    <div className="flex justify-end gap-3 md:gap-4 mt-10 mb-6 md:mb-0 text-secondaryText lg:hidden">
+    <div className="flex justify-end gap-3 md:gap-4 mt-10 mb-6 md:mb-0 text-secondaryText">
       {links.map(({ href, Icon, label }) => (
         <a
           key={label}

@@ -22,7 +22,9 @@ export default function About() {
       </div>
       <p className="mt-4 text-base md:text-lg font-semibold text-white">"{t("p5")}"</p>
 
-      <SocialLinks />
+      <div className="lg:hidden">
+        <SocialLinks />
+      </div>
     </section>
   );
 }
