@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "logo": "AVC",
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "stack": "Stack",
+    "contact": "Contact",
+    "resume": "Resume",
+    "status_online": "online",
+    "status_offline": "offline"
+  },
+  "hero": {
+    "eyebrow": "Hi, my name is",
+    "name": "Abdullah V. Coskun.",
+    "tagline_pre": "I build ",
+    "tagline_accent": "AI-powered systems",
+    "tagline_post": ".",
+    "intro": "Focus: AI workflows, internal tools and automation systems. I build operational systems — from analysis to deployment.",
+    "cta": "See projects",
+    "cta_secondary": "Get in touch"
+  },
+  "about": {
+    "heading": "About",
+    "p1": "From classic web development to building AI-powered systems.",
+    "p2_pre": "Current focus: ",
+    "p2_accent": "workflow automation and internal tooling",
+    "p2_post": " — operational systems that reduce manual work.",
+    "p3": "I build products end-to-end: from API integrations to deployment.",
+    "p4": "Working languages: English, German, Turkish. Focus on the DACH region and Turkey.",
+    "focus_label": "// focus",
+    "focus_items": ["AI Workflows", "Automation Systems", "Full-Stack Products", "Internal Tooling"],
+    "photo_alt": "Abdullah Coskun"
+  },
+  "services": {
+    "heading": "What I Build",
+    "ai_systems": {
+      "title": "AI Systems",
+      "body": "Orchestrated AI workflows and operational systems for complex business processes."
+    },
+    "automation": {
+      "title": "Automation Workflows",
+      "body": "Trigger-based automation and event-driven workflows."
+    },
+    "internal_tools": {
+      "title": "Internal Tools",
+      "body": "Admin panels, management dashboards and CRUD systems for operations teams."
+    },
+    "api_integrations": {
+      "title": "API Integrations",
+      "body": "Third-party API orchestration — webhooks, retry, and rate-limiting."
+    },
+    "operational_dashboards": {
+      "title": "Operational Dashboards",
+      "body": "Real-time observability, status monitoring and KPI visualization."
+    },
+    "product": {
+      "title": "Full-Stack Products",
+      "body": "End-to-end web platforms and admin systems — frontend to database."
+    }
+  },
+  "work": {
+    "heading": "Work",
+    "eyebrow": "real system",
+    "archive_heading": "Other Projects",
+    "archive_eyebrow": "// archive",
+    "github": "github",
+    "live": "live"
+  },
+  "projects": {
+    "featured": {
+      "isbn-resale-automation": {
+        "title": "ISBN Resale Automation",
+        "category": "automation system",
+        "description": "Automated price comparison for ISBN-based book resales — checks five second-hand platforms in real time and triggers the sale when conditions match."
+      },
+      "workflow-control-panel": {
+        "title": "Workflow Control Panel",
+        "category": "internal operations",
+        "description": "Internal panel for n8n run history, error states and manual triggers — operational control and observability across all automations."
+      },
+      "portfolio-hub": {
+        "title": "Portfolio Hub",
+        "category": "personal system",
+        "description": "Multilingual portfolio platform built with Next.js and TypeScript — TR · DE · EN, snap scroll, terminal aesthetic."
+      }
+    },
+    "archive": {
+      "webhook-monitor": {
+        "title": "Webhook Monitor",
+        "summary": "Internal tool for tracking webhook traffic, error states and retry patterns in n8n pipelines. With failure alerts and cumulative latency measurement."
+      },
+      "lead-intake-system": {
+        "title": "Lead Intake System",
+        "summary": "End-to-end orchestration of the form → CRM → notification path. With SLA timer, fallback routes and manual override."
+      },
+      "prompt-routing-tool": {
+        "title": "Prompt Router",
+        "summary": "Automated routing between OpenAI, Anthropic and local models — based on cost, latency and task type. With per-request profiling and fallback chain."
+      },
+      "agent-memory-layer": {
+        "title": "Agent Memory Layer",
+        "summary": "Persistent conversation memory and context retrieval on pgvector + Supabase. Threshold-based recall and background summarization for long-running AI dialogues."
+      },
+      "internal-ocr-utility": {
+        "title": "Internal OCR Tool",
+        "summary": "Document scanning, OCR and structured data extraction. Form-field detection, table parsing and confidence scoring eliminate manual data entry."
+      },
+      "ai-parsing-sandbox": {
+        "title": "AI Parser Sandbox",
+        "summary": "Sandbox for unstructured documents, emails and HTML. Schema-first extraction and regression-test corpus continuously measure parser accuracy."
+      }
+    }
+  },
+  "stack": {
+    "heading": "Stack",
+    "frontend": "frontend",
+    "backend": "backend",
+    "ai_ml": "ai · ml",
+    "tools": "tools · devops"
+  },
+  "contact": {
+    "eyebrow": "// open channel",
+    "heading": "Let's work together.",
+    "body": "Open to freelance projects, technical consulting and long-term collaboration. An idea, a question, or just a hello — drop me a line.",
+    "cta": "info@abdullahvcoskun.dev",
+    "channels_label": "// channels",
+    "channel_linkedin": "linkedin",
+    "channel_github": "github",
+    "channel_whatsapp": "whatsapp",
+    "studio_label": "// studio",
+    "studio_brand": "CoskunTech",
+    "studio_post": " — independent systems studio.",
+    "studio_meta": "AI automation · internal tooling · workflow systems"
+  },
+  "footer": {
+    "credit_line_1_pre": "Design inspired by ",
+    "credit_line_1_link": "Brittany Chiang",
+    "credit_line_2": "Built with Next.js, TypeScript and Tailwind CSS.",
+    "studio_line": "CoskunTech / systems studio",
+    "copyright": "© 2026 Abdullah V. Coskun"
+  }
+}

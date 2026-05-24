@@ -1,0 +1,656 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color tokens — see tokens.json */
+  --color-primary-400: #7DD3FC;
+  --color-primary:     #38BDF8;
+  --color-primary-600: #0EA5E9;
+
+  --color-neutral-100: #CCD6F6;
+  --color-neutral-300: #8892B0;
+  --color-neutral-500: #495670;
+  --color-neutral-700: #233554;
+  --color-neutral-900: #112240;
+  --color-neutral-950: #0A192F;
+
+  --color-bg:        #0A192F;
+  --color-surface:   #112240;
+  --color-surface-2: #233554;
+
+  /* Easing */
+  --ease: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  /* Sticky header yüksekliği — snap hizalamasını etkiler */
+  --header-h: 72px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: var(--header-h);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-snap-type: none; }
+}
+
+/* Bölümün tamamı viewport'u doldursun (header altında kalan alana sığsın) */
+.snap-section {
+  height: calc(100svh - var(--header-h));
+  scroll-snap-align: center;
+}
+
+/* Work gibi uzun bölümler için: üste snap, içerde serbest scroll */
+.snap-section-tall {
+  min-height: calc(100svh - var(--header-h));
+  scroll-snap-align: start;
+}
+
+/* Work section — nested snap container */
+.work-snap-container {
+  scroll-snap-align: start;
+  height: calc(100svh - var(--header-h));
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.work-snap-container::-webkit-scrollbar {
+  display: none;
+}
+
+.work-snap-child {
+  min-height: calc(100svh - var(--header-h));
+  scroll-snap-align: start;
+  padding: 4rem 0;
+}
+
+/* Footer — snap-aligned so it's reachable past Contact section */
+.footer-snap {
+  scroll-snap-align: end;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-neutral-300);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-neutral-950);
+}
+
+/* Section heading line — Brittany v4 imzası */
+.section-heading-line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-neutral-700);
+  max-width: 300px;
+  margin-left: 1rem;
+}
+
+/* Hero motion — terminal, low-noise. Mount'ta 1 kere oynar. */
+.reveal {
+  opacity: 0;
+  transform: translateY(4px);
+  animation: reveal 480ms var(--ease) forwards;
+  animation-delay: calc(var(--i, 0) * 80ms + 60ms);
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terminal caret — eyebrow'daki `>` sonrası */
+.caret {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.95em;
+  margin-left: 0.35em;
+  vertical-align: -0.1em;
+  background: var(--color-primary);
+  animation: caret-blink 1s step-end infinite;
+  animation-delay: 600ms;
+  opacity: 0;
+}
+
+@keyframes caret-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* Hero faint dot-grid backdrop — static, low-noise */
+.hero-grid {
+  background-image: radial-gradient(circle, rgba(136, 146, 176, 0.09) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse at center, black 35%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 35%, transparent 80%);
+}
+
+/* Scroll cue — intro fade then slow pulse */
+.scroll-cue {
+  opacity: 0;
+  animation:
+    scroll-cue-in 700ms var(--ease) 1200ms forwards,
+    scroll-cue-pulse 2400ms ease-in-out 1900ms infinite;
+}
+
+@keyframes scroll-cue-in {
+  from { opacity: 0; transform: translateY(-2px); }
+  to { opacity: 0.45; transform: translateY(0); }
+}
+
+@keyframes scroll-cue-pulse {
+  0%, 100% { opacity: 0.3; transform: translateY(0); }
+  50% { opacity: 0.7; transform: translateY(2px); }
+}
+
+/* Tactical focus ring — sharp primary outline */
+.focus-tactical:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+/* ── Service card visuals ─────────────────────────────────── */
+
+/* AI Systems — node slow breathe */
+@keyframes node-breathe {
+  0%, 100%  { opacity: 1;    }
+  50%       { opacity: 0.3;  }
+}
+
+/* Automation — packet travels left to right (164px = node span) */
+@keyframes flow-packet {
+  0%    { transform: translateX(0);     opacity: 0;   }
+  6%    { opacity: 0.9; }
+  90%   { opacity: 0.9; }
+  100%  { transform: translateX(164px); opacity: 0;   }
+}
+
+/* AI Systems — diagonal packets along connection lines */
+@keyframes topo-in {
+  0%    { transform: translate(0, 0);          opacity: 0;   }
+  8%    { opacity: 0.65; }
+  88%   { opacity: 0.65; }
+  100%  { transform: translate(47px, 10px);    opacity: 0;   }
+}
+@keyframes topo-out {
+  0%    { transform: translate(0, 0);          opacity: 0;   }
+  8%    { opacity: 0.65; }
+  88%   { opacity: 0.65; }
+  100%  { transform: translate(35px, -10px);   opacity: 0;   }
+}
+
+/* Browser cursor blink */
+@keyframes cursor-blink {
+  0%, 49%   { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* ── Service card hover micro-interactions ──────────────── */
+
+/* BrowserVisual — metric card shimmer on hover */
+@keyframes metric-shimmer {
+  0%, 100% { opacity: 0.35; }
+  50%       { opacity: 0.65; }
+}
+
+.services-card .metric-highlight { opacity: 0.35; }
+.services-card:hover .metric-highlight {
+  animation: metric-shimmer 1.4s ease-in-out infinite;
+}
+
+/* AI CORE breathes faster on card hover */
+.services-card:hover .node-core  { animation-duration: 1.8s !important; }
+
+/* AI flow node breathes faster on card hover */
+.services-card:hover .node-ai   { animation-duration: 1.2s !important; }
+
+/* WEBHOOK node fires on hover */
+.services-card .webhook-node { transition: stroke 300ms ease; }
+.services-card:hover .webhook-node { stroke: var(--color-primary); }
+
+/* Browser cursor types faster on hover */
+.services-card:hover .browser-cursor { animation-duration: 0.4s !important; }
+
+/* Data Pipeline — transform breathes faster on hover */
+.services-card:hover .node-transform { animation-duration: 1.6s !important; }
+
+/* API Integrations — router breathes faster on hover */
+.services-card:hover .node-router { animation-duration: 1.4s !important; }
+
+/* DevOps Deploy — test stage breathes faster + active dot pulses */
+.services-card:hover .node-test { animation-duration: 1.2s !important; }
+
+.pipeline-pulse-deploy {
+  animation: pipeline-pulse-deploy 1.8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes pipeline-pulse-deploy {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 1; }
+}
+
+.services-card:hover .pipeline-pulse-deploy {
+  animation-duration: 0.9s !important;
+}
+
+/* ── Projects (03) ────────────────────────────────────── */
+
+/* ── Operational pulse — shared by featured + archive ── */
+.ops-pulse {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+  animation: ops-pulse 2.2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes ops-pulse {
+  0%, 100% { opacity: 0.45; box-shadow: 0 0 4px rgba(56, 189, 248, 0.3); }
+  50%      { opacity: 1;    box-shadow: 0 0 10px rgba(56, 189, 248, 0.7); }
+}
+
+/* ── Featured project card ────────────────────────────── */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 380ms var(--ease);
+}
+
+@media (min-width: 768px) {
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.project-card-preview {
+  background: var(--color-bg);
+  transition: border-color 400ms var(--ease), box-shadow 400ms var(--ease);
+}
+
+.project-card-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(136, 146, 176, 0.07) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(17, 34, 64, 0.3) 0%, rgba(10, 25, 47, 0) 65%);
+  background-size: 20px 20px, 100% 100%;
+  mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Image — desaturated default, color on card hover */
+.project-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(80%) brightness(0.74) contrast(1.04);
+  transition: filter 500ms var(--ease);
+}
+
+.project-card:hover .project-card-img {
+  filter: grayscale(0%) brightness(1.05) contrast(1.02);
+}
+
+/* Subtle vignette over image */
+.project-card-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 75% 65% at center, transparent 35%, rgba(10, 25, 47, 0.55) 90%, rgba(10, 25, 47, 0.85) 100%);
+  transition: opacity 500ms var(--ease);
+}
+
+.project-card:hover .project-card-overlay {
+  opacity: 0.6;
+}
+
+/* Card hover — stronger glow + info border + soft drop shadow */
+.project-card:hover .project-card-preview {
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow:
+    0 0 40px -8px rgba(56, 189, 248, 0.32),
+    0 18px 36px -16px rgba(0, 0, 0, 0.6);
+}
+
+.project-card-info {
+  background: rgba(17, 34, 64, 0.35);
+  transition: border-color 400ms var(--ease), background-color 400ms var(--ease), box-shadow 400ms var(--ease);
+}
+
+.project-card:hover .project-card-info {
+  border-color: rgba(56, 189, 248, 0.5);
+  background: rgba(17, 34, 64, 0.6);
+  box-shadow: 0 22px 36px -18px rgba(0, 0, 0, 0.55);
+}
+
+/* Title icon by project name */
+.project-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color 300ms var(--ease), transform 300ms var(--ease);
+}
+
+.project-card:hover .project-card-icon {
+  color: var(--color-primary);
+  transform: translateX(1px);
+}
+
+/* Inline status badge — sits in info area, not on screenshot */
+.card-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.card-status-badge .ops-pulse {
+  width: 5px;
+  height: 5px;
+}
+
+/* Card link — github / live */
+.card-link {
+  color: var(--color-neutral-100);
+  transition: color 200ms var(--ease);
+}
+
+.card-link:hover {
+  color: var(--color-primary);
+}
+
+/* ── Archive card — compact terminal-style ─────────────── */
+
+.archive-card {
+  padding: 18px 18px 20px;
+  background: rgba(17, 34, 64, 0.28);
+  border: 1px solid rgba(56, 189, 248, 0.1);
+  transition: border-color 300ms var(--ease), background-color 300ms var(--ease), transform 300ms var(--ease);
+}
+
+.archive-card:hover {
+  border-color: rgba(56, 189, 248, 0.32);
+  background: rgba(17, 34, 64, 0.5);
+  transform: translateY(-2px);
+}
+
+.archive-card-glyph {
+  transition: color 300ms var(--ease), transform 300ms var(--ease);
+}
+
+.archive-card:hover .archive-card-glyph {
+  color: var(--color-primary);
+  transform: rotate(60deg);
+}
+
+.archive-card h4 {
+  transition: color 300ms var(--ease);
+}
+
+.archive-card:hover h4 {
+  color: var(--color-primary-400);
+}
+
+/* ── About (01) photo treatment ───────────────────────── */
+
+.about-photo {
+  position: relative;
+}
+
+.about-photo-img {
+  display: block;
+  filter: grayscale(95%) brightness(0.78) contrast(0.95);
+  transition: filter 600ms var(--ease);
+}
+
+.about-photo:hover .about-photo-img {
+  filter: grayscale(20%) brightness(0.92) contrast(1);
+}
+
+/* Top-down veil — fades photo into bg, kills block feel */
+.about-photo-veil {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(10, 25, 47, 0) 50%, rgba(10, 25, 47, 0.6) 100%),
+    radial-gradient(ellipse at 50% 30%, rgba(10, 25, 47, 0) 30%, rgba(10, 25, 47, 0.3) 100%);
+  transition: opacity 600ms var(--ease);
+}
+
+.about-photo:hover .about-photo-veil {
+  opacity: 0.55;
+}
+
+/* Offset accent — softened from solid primary to subtle */
+.about-photo-accent {
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  transition: border-color 500ms var(--ease);
+}
+
+.about-photo:hover .about-photo-accent {
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+/* ── Stack (04) ────────────────────────────────────────── */
+
+.stack-recent {
+  padding: 16px 20px;
+  border: 1px solid rgba(56, 189, 248, 0.1);
+  border-radius: 2px;
+  background: rgba(17, 34, 64, 0.25);
+}
+
+.stack-column {
+  position: relative;
+}
+
+.stack-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-neutral-500);
+  flex-shrink: 0;
+  transition: background-color 240ms var(--ease), box-shadow 240ms var(--ease);
+}
+
+.stack-item {
+  transition: color 240ms var(--ease);
+}
+
+.stack-item:hover {
+  color: var(--color-primary);
+}
+
+.stack-item:hover .stack-dot {
+  background: var(--color-primary);
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.55);
+}
+
+/* ── Contact (05) ──────────────────────────────────────── */
+
+.contact-header-line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-neutral-700);
+  max-width: 300px;
+  margin-left: 0.5rem;
+  align-self: center;
+}
+
+.contact-cta {
+  color: var(--color-primary);
+  position: relative;
+  padding: 6px 0;
+  transition: color 240ms var(--ease), letter-spacing 240ms var(--ease);
+}
+
+.contact-cta::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  opacity: 0.4;
+  transition: opacity 240ms var(--ease), background-color 240ms var(--ease);
+}
+
+.contact-cta:hover {
+  color: var(--color-primary-400);
+}
+
+.contact-cta:hover::after {
+  opacity: 1;
+}
+
+.contact-cta-arrow,
+.contact-cta-icon {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 280ms var(--ease);
+}
+
+.contact-cta:hover .contact-cta-arrow {
+  transform: translate(2px, -2px);
+}
+
+.contact-cta:hover .contact-cta-icon {
+  transform: translateX(2px);
+}
+
+/* Secondary channels (linkedin / github) */
+.contact-channel {
+  color: var(--color-neutral-100);
+  transition: color 220ms var(--ease);
+}
+
+.contact-channel:hover {
+  color: var(--color-primary);
+}
+
+.contact-secondary-link {
+  color: var(--color-primary);
+  transition: color 200ms var(--ease);
+}
+
+.contact-secondary-link:hover {
+  color: var(--color-primary-400);
+}
+
+/* ── Scroll reveal — calm technical motion ───────────── */
+.reveal-out {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 600ms var(--ease) var(--reveal-delay, 0ms),
+    transform 600ms var(--ease) var(--reveal-delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-out,
+  .reveal-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .project-card-img,
+  .project-card-overlay,
+  .archive-card,
+  .archive-card-glyph {
+    transition: none !important;
+  }
+  .archive-card:hover {
+    transform: none;
+  }
+  .archive-card:hover .archive-card-glyph {
+    transform: none;
+  }
+  .ops-pulse {
+    animation: none !important;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  .caret {
+    animation: none;
+    opacity: 1;
+  }
+  .scroll-cue {
+    animation: none;
+    opacity: 0.45;
+  }
+  .exec-cursor,
+  .browser-cursor {
+    animation: none !important;
+    opacity: 0.8;
+  }
+  .node-breathe {
+    animation: none !important;
+    opacity: 1;
+  }
+}
+
+/* Studio brand link — terminal underline + soft primary glow on hover */
+.studio-brand {
+  position: relative;
+  display: inline-block;
+  transition: color 240ms var(--ease), text-shadow 240ms var(--ease);
+}
+.studio-brand::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  background: var(--color-primary);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 280ms var(--ease);
+}
+.studio-brand:hover::after {
+  transform: scaleX(1);
+}
+.studio-brand:hover {
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
+}

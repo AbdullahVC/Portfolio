@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "logo": "AVÇ",
+    "about": "Hakkımda",
+    "services": "Hizmetler",
+    "work": "Projeler",
+    "stack": "Stack",
+    "contact": "İletişim",
+    "resume": "CV İndir",
+    "status_online": "online",
+    "status_offline": "offline"
+  },
+  "hero": {
+    "eyebrow": "AI systems builder",
+    "name": "Abdullah V. Çoşkun.",
+    "tagline_pre": "Ben ",
+    "tagline_accent": "sistemler",
+    "tagline_post": " inşa ederim.",
+    "intro": "AI destekli ürünler, workflow'lar ve operasyon sistemleri geliştiriyorum. Fikirden deploy'a kadar tüm süreci tek başıma yönetiyorum.",
+    "cta": "Projeleri incele",
+    "cta_secondary": "İletişime geç"
+  },
+  "about": {
+    "heading": "Hakkımda",
+    "p1": "Klasik web development'tan AI destekli sistem geliştirmeye geçtim.",
+    "p2_pre": "Bugün odağım; ",
+    "p2_accent": "workflow otomasyonu, internal tooling",
+    "p2_post": " — operasyon yükünü azaltan dijital sistemler geliştirmek.",
+    "p3": "API entegrasyonlarından deploy süreçlerine kadar ürünün tamamını inşa ediyorum.",
+    "p4": "Türkçe, Almanca ve İngilizce çalışabiliyorum. Özellikle Türkiye ve DACH bölgesindeki dijital işler üzerine odaklanıyorum.",
+    "focus_label": "// focus",
+    "focus_items": ["AI Workflows", "Automation Systems", "Full-Stack Products", "Internal Tooling"],
+    "photo_alt": "Abdullah Çoşkun"
+  },
+  "services": {
+    "heading": "Neler Yapıyorum",
+    "ai_systems": {
+      "title": "AI Systems",
+      "body": "Operational AI workflows ve orchestration sistemleri.",
+      "expand_intro": "Karmaşık iş süreçlerini AI destekli sistemlere dönüştürüyorum.",
+      "expand_items": [
+        "Çok adımlı AI işlem orkestrasyonu",
+        "RAG tabanlı iç bilgi sistemi",
+        "Harici API entegrasyonu + orkestrasyonu",
+        "Veri toplama → işleme → aksiyon akışı"
+      ],
+      "expand_stack": "Claude · OpenAI · n8n · PostgreSQL"
+    },
+    "automation": {
+      "title": "Automation Workflows",
+      "body": "Trigger-based automation ve event-driven workflow'lar.",
+      "expand_intro": "Tekrarlayan süreçleri tetikleyici tabanlı akışlara dönüştürüyorum.",
+      "expand_items": [
+        "Lead → CRM → bildirim akışı",
+        "Periyodik raporlama ve e-posta gönderimi",
+        "Belge işleme ve onay süreçleri",
+        "Webhook tetiklemeli içerik yayın pipeline'ı"
+      ],
+      "expand_stack": "n8n · OpenAI · REST APIs · Webhooks"
+    },
+    "internal_tools": {
+      "title": "Internal Tools",
+      "body": "İç yönetim panelleri, admin dashboard'ları ve CRUD sistemleri.",
+      "expand_intro": "Operasyon ekipleri için iç araçlar geliştiriyorum.",
+      "expand_items": [
+        "Admin paneller ve yönetim arayüzleri",
+        "İç gözlemleme ve raporlama",
+        "Manuel override ve operasyon kontrolleri",
+        "Role-based access ve audit log"
+      ],
+      "expand_stack": "Next.js · Supabase · tRPC · TypeScript"
+    },
+    "api_integrations": {
+      "title": "API Integrations",
+      "body": "Üçüncü-parti API orkestrasyonu ve webhook entegrasyonları.",
+      "expand_intro": "Birden fazla servisi tek koordine edici katman ardına gizleyen entegrasyon sistemleri kuruyorum.",
+      "expand_items": [
+        "REST + GraphQL + Webhook orkestrasyonu",
+        "Stripe, HubSpot, Slack, Sheets entegrasyonu",
+        "Rate limiting ve retry strategy",
+        "Idempotency ve event deduplication"
+      ],
+      "expand_stack": "TypeScript · n8n · REST · Webhooks"
+    },
+    "operational_dashboards": {
+      "title": "Operational Dashboards",
+      "body": "Real-time observability, metrik panelleri ve durum izleme.",
+      "expand_intro": "Operasyon ekipleri için canlı metrik ve durum panelleri kuruyorum.",
+      "expand_items": [
+        "Workflow run history ve error states",
+        "Real-time metrik ve KPI panelleri",
+        "Alerting ve anomaly detection",
+        "Custom log + audit görünümü"
+      ],
+      "expand_stack": "Next.js · Supabase · Recharts · n8n API"
+    },
+    "product": {
+      "title": "Full-Stack Products",
+      "body": "Full-stack sistemler ve operational dashboards.",
+      "expand_intro": "Fikir aşamasından deploy sürecine kadar ürünün tamamını geliştiriyorum.",
+      "expand_items": [
+        "Operasyon dashboard'ları",
+        "İç yönetim panelleri",
+        "API tabanlı admin sistemleri",
+        "Müşteri odaklı web platformları"
+      ],
+      "expand_stack": "Next.js · TypeScript · Supabase · Vercel"
+    }
+  },
+  "work": {
+    "heading": "Projeler",
+    "eyebrow": "real system",
+    "archive_heading": "Diğer Projeler",
+    "archive_eyebrow": "// arşiv",
+    "github": "github",
+    "live": "live"
+  },
+  "projects": {
+    "featured": {
+      "isbn-resale-automation": {
+        "title": "ISBN Resale Automation",
+        "category": "workflow automation",
+        "description": "Tarayıcıdan alınan ISBN verisini 5 farklı ikinci el kitap platformunda otomatik fiyat karşılaştıran ve uygun koşulda satışı tetikleyen workflow."
+      },
+      "workflow-control-panel": {
+        "title": "Workflow Control Panel",
+        "category": "internal ops system",
+        "description": "n8n run history, error states ve manuel trigger için iç yönetim paneli — workflow observability ve operasyonel kontrol."
+      },
+      "portfolio-hub": {
+        "title": "Portfolio Hub",
+        "category": "personal system",
+        "description": "Next.js + TypeScript ile çok dilli portföy platformu — TR · DE · EN, snap scroll, terminal aesthetic."
+      }
+    },
+    "archive": {
+      "webhook-monitor": {
+        "title": "Webhook İzleyici",
+        "summary": "n8n workflow'larındaki webhook trafiğini, hata durumlarını ve retry pattern'lerini izleyen iç gözlemleme aracı. Failure alert'leri ve kümülatif latency ölçümü dahil."
+      },
+      "lead-intake-system": {
+        "title": "Lead Alım Sistemi",
+        "summary": "Form → CRM → bildirim akışını uçtan uca orchestre eden iç sistem. SLA timer, fallback path ve manuel override mekanizması dahil."
+      },
+      "prompt-routing-tool": {
+        "title": "Prompt Yönlendirici",
+        "summary": "Cost, latency ve task tipine göre OpenAI, Anthropic ve local model'ler arasında otomatik prompt routing. Per-request profiling ve fallback chain dahil."
+      },
+      "agent-memory-layer": {
+        "title": "Ajan Hafıza Katmanı",
+        "summary": "pgvector + Supabase üstünde kalıcı conversation memory ve context retrieval. Threshold-based recall ve background summarization ile uzun-sürdüğü AI agent diyaloglarına bellek sağlar."
+      },
+      "internal-ocr-utility": {
+        "title": "Dahili OCR Aracı",
+        "summary": "Belge tarama, OCR ve yapılandırılmış veri çıkarımı için iç araç. Form field detection, table parsing ve confidence scoring ile manuel veri girişini ortadan kaldırır."
+      },
+      "ai-parsing-sandbox": {
+        "title": "AI Parser Sandbox",
+        "summary": "Yapı bozuk dokümanlar, e-postalar ve HTML için parsing sandbox. Schema-first extraction ve regression test corpus ile parser doğruluğunu sürekli ölçer."
+      }
+    }
+  },
+  "stack": {
+    "heading": "Stack",
+    "frontend": "frontend",
+    "backend": "backend",
+    "ai_ml": "ai · ml",
+    "tools": "tools · devops"
+  },
+  "contact": {
+    "eyebrow": "// open channel",
+    "heading": "Birlikte çalışalım.",
+    "body": "Şu an freelance, danışmanlık ya da ortak proje teklifleri için kapım açık. Bir fikir, bir soru ya da sadece bir merhaba — yaz gel.",
+    "cta": "info@abdullahvcoskun.dev",
+    "channels_label": "// channels",
+    "channel_linkedin": "linkedin",
+    "channel_github": "github",
+    "channel_whatsapp": "whatsapp",
+    "studio_label": "// studio",
+    "studio_brand": "CoskunTech",
+    "studio_post": " — independent systems studio.",
+    "studio_meta": "AI automation · internal tooling · workflow systems"
+  },
+  "footer": {
+    "credit_line_1_pre": "Inspired by the portfolio language of ",
+    "credit_line_1_link": "Brittany Chiang",
+    "credit_line_2": "Reinterpreted for operational systems & AI workflows.",
+    "studio_line": "CoskunTech / systems studio",
+    "copyright": "© 2026 Abdullah V. Çoşkun"
+  }
+}

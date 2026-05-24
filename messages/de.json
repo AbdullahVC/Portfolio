@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "logo": "AVC",
+    "about": "Über mich",
+    "services": "Leistungen",
+    "work": "Projekte",
+    "stack": "Stack",
+    "contact": "Kontakt",
+    "resume": "Lebenslauf",
+    "status_online": "online",
+    "status_offline": "offline"
+  },
+  "hero": {
+    "eyebrow": "Hi, mein Name ist",
+    "name": "Abdullah V. Coskun.",
+    "tagline_pre": "Ich entwickle ",
+    "tagline_accent": "KI-gestützte Systeme",
+    "tagline_post": ".",
+    "intro": "Schwerpunkt: KI-Workflows, interne Tools und Automatisierungssysteme. Ich baue operative Systeme — von der Analyse bis zum Deployment.",
+    "cta": "Projekte ansehen",
+    "cta_secondary": "Kontakt aufnehmen"
+  },
+  "about": {
+    "heading": "Über mich",
+    "p1": "Vom klassischen Web-Development zur Entwicklung KI-gestützter Systeme.",
+    "p2_pre": "Mein aktueller Schwerpunkt: ",
+    "p2_accent": "Workflow-Automatisierung und internes Tooling",
+    "p2_post": " — operative Systeme, die manuelle Arbeit reduzieren.",
+    "p3": "Ich baue Produkte end-to-end: von API-Integrationen bis zum Deployment.",
+    "p4": "Arbeitssprachen: Deutsch, Türkisch, Englisch. Fokus auf die DACH-Region und die Türkei.",
+    "focus_label": "// fokus",
+    "focus_items": ["KI-Workflows", "Automatisierungssysteme", "Full-Stack-Produkte", "Interne Tools"],
+    "photo_alt": "Abdullah Coskun"
+  },
+  "services": {
+    "heading": "Leistungen",
+    "ai_systems": {
+      "title": "KI-Systeme",
+      "body": "Orchestrierte KI-Workflows und operative Systeme für komplexe Geschäftsprozesse."
+    },
+    "automation": {
+      "title": "Automatisierungs-Workflows",
+      "body": "Trigger-basierte Automatisierungen für wiederkehrende Abläufe."
+    },
+    "internal_tools": {
+      "title": "Interne Tools",
+      "body": "Admin-Panels, Management-Dashboards und CRUD-Systeme für Operations-Teams."
+    },
+    "api_integrations": {
+      "title": "API-Integrationen",
+      "body": "Orchestrierung von Drittanbieter-APIs — Webhooks, Retry und Rate-Limiting."
+    },
+    "operational_dashboards": {
+      "title": "Operative Dashboards",
+      "body": "Real-Time Observability, Status-Monitoring und KPI-Visualisierung."
+    },
+    "product": {
+      "title": "Full-Stack-Produkte",
+      "body": "End-to-End Web-Plattformen und Admin-Systeme — vom Frontend bis zur Datenbank."
+    }
+  },
+  "work": {
+    "heading": "Projekte",
+    "eyebrow": "echtes system",
+    "archive_heading": "Weitere Projekte",
+    "archive_eyebrow": "// archiv",
+    "github": "github",
+    "live": "live"
+  },
+  "projects": {
+    "featured": {
+      "isbn-resale-automation": {
+        "title": "ISBN Resale Automation",
+        "category": "automatisierungs-system",
+        "description": "Automatisierte Preisprüfung für ISBN-basierte Buchankäufe — vergleicht fünf Second-Hand-Plattformen in Echtzeit und triggert den Verkauf bei passenden Konditionen."
+      },
+      "workflow-control-panel": {
+        "title": "Workflow Control Panel",
+        "category": "internal operations",
+        "description": "Internes Panel für n8n Run History, Fehlerzustände und manuelle Trigger — operative Kontrolle und Observability über alle Automatisierungen."
+      },
+      "portfolio-hub": {
+        "title": "Portfolio Hub",
+        "category": "persönliches system",
+        "description": "Mehrsprachige Portfolio-Plattform mit Next.js und TypeScript — TR · DE · EN, Snap-Scroll, Terminal-Aesthetic."
+      }
+    },
+    "archive": {
+      "webhook-monitor": {
+        "title": "Webhook-Monitor",
+        "summary": "Internes Tool zur Beobachtung von Webhook-Traffic, Fehlerzuständen und Retry-Patterns in n8n-Pipelines. Mit Failure-Alerts und kumulativer Latenz-Messung."
+      },
+      "lead-intake-system": {
+        "title": "Lead-Intake-System",
+        "summary": "End-to-End-Orchestrierung des Form → CRM → Notification-Pfads. Mit SLA-Timer, Fallback-Routen und manuellem Override."
+      },
+      "prompt-routing-tool": {
+        "title": "Prompt-Router",
+        "summary": "Automatisches Routing zwischen OpenAI, Anthropic und lokalen Modellen — basierend auf Kosten, Latenz und Task-Typ. Mit Per-Request-Profiling und Fallback-Kette."
+      },
+      "agent-memory-layer": {
+        "title": "Agent-Memory-Layer",
+        "summary": "Persistente Conversation-Memory und Context-Retrieval auf pgvector + Supabase. Threshold-basierter Recall und Background-Summarization für langlebige KI-Dialoge."
+      },
+      "internal-ocr-utility": {
+        "title": "Internes OCR-Tool",
+        "summary": "Dokumenten-Scan, OCR und strukturierte Datenextraktion. Form-Field-Detection, Table-Parsing und Confidence-Scoring eliminieren manuelle Dateneingabe."
+      },
+      "ai-parsing-sandbox": {
+        "title": "AI-Parser-Sandbox",
+        "summary": "Sandbox für unstrukturierte Dokumente, E-Mails und HTML. Schema-first Extraction und Regression-Test-Corpus messen Parser-Genauigkeit kontinuierlich."
+      }
+    }
+  },
+  "stack": {
+    "heading": "Stack",
+    "frontend": "frontend",
+    "backend": "backend",
+    "ai_ml": "ai · ml",
+    "tools": "tools · devops"
+  },
+  "contact": {
+    "eyebrow": "// open channel",
+    "heading": "Lass uns zusammenarbeiten.",
+    "body": "Offen für Freelance-Projekte, technische Beratung und langfristige Zusammenarbeit. Eine Idee, eine Frage oder ein Hallo — schreib mir.",
+    "cta": "Mail schreiben",
+    "channels_label": "// channels",
+    "channel_linkedin": "linkedin",
+    "channel_github": "github",
+    "channel_whatsapp": "whatsapp",
+    "studio_label": "// studio",
+    "studio_brand": "CoskunTech",
+    "studio_post": " — independent systems studio.",
+    "studio_meta": "AI automation · internal tooling · workflow systems"
+  },
+  "footer": {
+    "credit_line_1_pre": "Design inspiriert von ",
+    "credit_line_1_link": "Brittany Chiang",
+    "credit_line_2": "Entwickelt mit Next.js, TypeScript und Tailwind CSS.",
+    "studio_line": "CoskunTech / systems studio",
+    "copyright": "© 2026 Abdullah V. Coskun"
+  }
+}

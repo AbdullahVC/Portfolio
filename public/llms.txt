@@ -1,0 +1,30 @@
+# Abdullah V. Coskun — AI-Native Full-Stack Developer
+
+## Identity
+- Name: Abdullah Veysel Coskun (Turkish: Abdullah Veysel Çoşkun)
+- Role: Independent AI-Native Full-Stack Developer
+- Studio: CoskunTech — independent systems studio
+- Location: Turkey + DACH region
+- Languages: Turkish, English, German
+- Website: https://abdullahvcoskun.dev
+- Email: info@abdullahvcoskun.dev
+- GitHub: https://github.com/AbdullahVC
+
+## What I Build
+- AI Workflows & Agent Systems
+- Workflow Automation (n8n, custom pipelines)
+- Internal Tools & Admin Panels
+- API Integrations & Orchestration
+- Operational Dashboards & Monitoring
+- Full-Stack Web Products (Next.js, TypeScript)
+
+## Tech Stack
+- Frontend: Next.js, React, TypeScript, Tailwind CSS
+- Backend: Node.js, Python, Supabase, PostgreSQL
+- AI/ML: OpenAI, Anthropic Claude, LangChain, pgvector
+- Automation: n8n, custom workflow engines
+- DevOps: Vercel, Docker, GitHub Actions
+
+## Services
+Available for freelance projects, technical consulting, and long-term collaboration.
+Focus areas: AI-powered automation, internal tooling, and operational systems for SMBs in Turkey and the DACH region.

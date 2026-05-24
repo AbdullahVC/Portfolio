@@ -1,0 +1,21 @@
+{
+  "name": "Abdullah V. Coskun — AI-Native Full-Stack Developer",
+  "short_name": "AVC",
+  "description": "AI-powered products, workflow automations and digital operation systems.",
+  "start_url": "/tr",
+  "display": "standalone",
+  "background_color": "#0A192F",
+  "theme_color": "#38BDF8",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
