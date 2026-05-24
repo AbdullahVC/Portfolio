@@ -1,0 +1,41 @@
+import { useTranslations } from 'next-intl';
+
+export default function Hero() {
+  const t = useTranslations('hero');
+
+  return (
+    <section id="hero" className="snap-section flex flex-col justify-center">
+      <div className="max-w-content mx-auto px-12 w-full">
+        <p className="font-mono text-sm text-primary mb-6 tracking-wider">{`> ${t('eyebrow')}`}</p>
+
+        <h1 className="font-sans font-semibold leading-[1.1] tracking-tight text-slate-100 mb-2 text-5xl sm:text-7xl lg:text-[5rem]">
+          {t('name')}
+        </h1>
+
+        <p className="font-sans font-semibold leading-[1.1] tracking-tight mb-8 text-4xl sm:text-5xl lg:text-[3.75rem]">
+          <span className="text-slate-500">{t('tagline_pre')}</span>
+          <span className="text-primary">{t('tagline_accent')}</span>
+          <span className="text-slate-100">{' '}{t('tagline_post')}</span>
+        </p>
+
+        <p className="max-w-[55ch] text-lg mb-12">{t('intro')}</p>
+
+        <a
+          href="#work"
+          className="inline-block font-mono text-base px-9 py-5 border border-primary rounded text-primary hover:bg-primary/10 hover:-translate-y-0.5 transition-all"
+        >
+          {t('cta')}
+        </a>
+
+        <p className="mt-8 font-mono text-[13px] text-slate-500 tracking-wide">
+          {(['Next.js', 'AI Workflows', 'Automation', 'Internal Tools'] as const).map((tag, i, arr) => (
+            <span key={tag}>
+              <span className="hover:text-slate-300 transition-colors cursor-default">{tag}</span>
+              {i < arr.length - 1 && <span className="mx-3 text-slate-700">·</span>}
+            </span>
+          ))}
+        </p>
+      </div>
+    </section>
+  );
+}

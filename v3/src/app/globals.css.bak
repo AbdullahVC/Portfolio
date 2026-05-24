@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color tokens — see tokens.json */
+  --color-primary-400: #7DD3FC;
+  --color-primary:     #38BDF8;
+  --color-primary-600: #0EA5E9;
+
+  --color-neutral-100: #CCD6F6;
+  --color-neutral-300: #8892B0;
+  --color-neutral-500: #495670;
+  --color-neutral-700: #233554;
+  --color-neutral-900: #112240;
+  --color-neutral-950: #0A192F;
+
+  --color-bg:        #0A192F;
+  --color-surface:   #112240;
+  --color-surface-2: #233554;
+
+  /* Easing */
+  --ease: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  /* Sticky header yüksekliği — snap hizalamasını etkiler */
+  --header-h: 72px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: var(--header-h);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-snap-type: none; }
+}
+
+/* Bölümün tamamı viewport'u doldursun (header altında kalan alana sığsın) */
+.snap-section {
+  height: calc(100svh - var(--header-h));
+  scroll-snap-align: center;
+}
+
+/* Work gibi uzun bölümler için: üste snap, içerde serbest scroll */
+.snap-section-tall {
+  min-height: calc(100svh - var(--header-h));
+  scroll-snap-align: start;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-neutral-300);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-neutral-950);
+}
+
+/* Section heading line — Brittany v4 imzası */
+.section-heading-line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-neutral-700);
+  max-width: 300px;
+  margin-left: 1rem;
+}
