@@ -1,0 +1,49 @@
+.project-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 224, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-name {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #cbd5e0;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.project-tag {
+  background-color: #00e0ff10;
+  color: #00e0ff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid #00e0ff50;
+}
+
+.project-links a {
+  margin-right: 12px;
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}

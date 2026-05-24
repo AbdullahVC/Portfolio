@@ -1,19 +1,21 @@
 # Dependencies
 node_modules/
 
-# Next.js build
+# Next.js
 .next/
 out/
 dist/
 
-# Dev
-*.log
-
-# Env
+# Environment
 .env*
 !.env.example
 
-# System / Editor
+# Logs
+*.log
+
+# System
 .DS_Store
 Thumbs.db
 .vscode/
+.idea/
+

@@ -1,0 +1,40 @@
+.projects-container {
+  width: 55%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* 💻 Laptop - 1200px ve altı */
+@media (max-width: 1200px) {
+  .projects-container {
+    width: 65%;
+  }
+}
+
+/* 📱 Tablet - 992px ve altı */
+@media (max-width: 992px) {
+  .projects-container {
+    width: 90%;
+  }
+}
+
+/* 📱 Büyük Telefon - 768px ve altı */
+@media (max-width: 768px) {
+  .projects-container {
+    width: 90%;
+  }
+}
+
+/* 📱 Küçük Telefon - 576px ve altı */
+@media (max-width: 576px) {
+  .projects-container {
+    width: 90%;
+  }
+}
