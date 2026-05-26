@@ -7,27 +7,19 @@ export default function ArchiveCard({ project }: { project: ArchiveProject }) {
   const title   = tp(`${project.slug}.title`);
   const summary = tp(`${project.slug}.summary`);
 
-  const showRight = project.github || project.status;
-
   return (
     <article className="archive-card group h-full flex flex-col">
       <header className="flex items-start justify-between gap-3 mb-6">
         <NodeGlyph />
-        {showRight && (
-          project.github ? (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="archive-card-repo font-mono text-[11px] text-slate-500 tracking-[0.14em] hover:text-primary transition-colors"
-            >
-              ↗ repo
-            </a>
-          ) : (
-            <span className="font-mono text-[11px] text-slate-600 tracking-[0.14em] uppercase">
-              {project.status}
-            </span>
-          )
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="archive-card-repo font-mono text-[11px] text-slate-500 tracking-[0.14em] hover:text-primary transition-colors"
+          >
+            ↗ repo
+          </a>
         )}
       </header>
 

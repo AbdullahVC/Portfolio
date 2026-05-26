@@ -11,100 +11,54 @@
     "status_offline": "offline"
   },
   "hero": {
-    "eyebrow": "AI systems builder",
+    "eyebrow": "full-stack AI developer",
     "name": "Abdullah V. Çoşkun.",
-    "tagline_pre": "Ben ",
-    "tagline_accent": "sistemler",
-    "tagline_post": " inşa ederim.",
-    "intro": "AI destekli ürünler, workflow'lar ve operasyon sistemleri geliştiriyorum. Fikirden deploy'a kadar tüm süreci tek başıma yönetiyorum.",
+    "tagline_pre": "",
+    "tagline_accent": "Web uygulamaları",
+    "tagline_mid": " ve ",
+    "tagline_accent2": "AI sistemleri",
+    "tagline_post": " geliştiriyorum.",
+    "intro": "Next.js'ten backend'e, otomasyon akışlarından AI entegrasyonuna — uçtan uca kuruyorum.",
     "cta": "Projeleri incele",
     "cta_secondary": "İletişime geç"
   },
   "about": {
     "heading": "Hakkımda",
-    "p1": "Klasik web development'tan AI destekli sistem geliştirmeye geçtim.",
+    "p1": "İş süreçlerini yazılıma dönüştürüyorum. Web uygulamaları, dashboardlar, otomasyon akışları ve AI destekli araçlar geliştiriyorum.",
     "p2_pre": "Bugün odağım; ",
-    "p2_accent": "workflow otomasyonu, internal tooling",
-    "p2_post": " — operasyon yükünü azaltan dijital sistemler geliştirmek.",
-    "p3": "API entegrasyonlarından deploy süreçlerine kadar ürünün tamamını inşa ediyorum.",
-    "p4": "Türkçe, Almanca ve İngilizce çalışabiliyorum. Özellikle Türkiye ve DACH bölgesindeki dijital işler üzerine odaklanıyorum.",
+    "p2_accent": "kullanıcıya dokunan ürünler",
+    "p2_post": " — tekrar eden işleri sistemleştirmek, veriyi görünür kılmak.",
+    "p3": "Arayüzden backend'e, API entegrasyonundan deploy sürecine kadar tüm sistemi tek elden kuruyorum.",
+    "p4": "Türkçe, Almanca ve İngilizce çalışabiliyorum. Özellikle Türkiye ve DACH bölgesindeki dijital projeler üzerine odaklanıyorum.",
     "focus_label": "// focus",
-    "focus_items": ["AI Workflows", "Automation Systems", "Full-Stack Products", "Internal Tooling"],
+    "focus_items": ["Web Applications", "AI Agents", "AI Integrations", "Workflow Automation"],
     "photo_alt": "Abdullah Çoşkun"
   },
   "services": {
     "heading": "Neler Yapıyorum",
-    "ai_systems": {
-      "title": "AI Systems",
-      "body": "Operational AI workflows ve orchestration sistemleri.",
-      "expand_intro": "Karmaşık iş süreçlerini AI destekli sistemlere dönüştürüyorum.",
-      "expand_items": [
-        "Çok adımlı AI işlem orkestrasyonu",
-        "RAG tabanlı iç bilgi sistemi",
-        "Harici API entegrasyonu + orkestrasyonu",
-        "Veri toplama → işleme → aksiyon akışı"
-      ],
-      "expand_stack": "Claude · OpenAI · n8n · PostgreSQL"
-    },
-    "automation": {
-      "title": "Automation Workflows",
-      "body": "Trigger-based automation ve event-driven workflow'lar.",
-      "expand_intro": "Tekrarlayan süreçleri tetikleyici tabanlı akışlara dönüştürüyorum.",
-      "expand_items": [
-        "Lead → CRM → bildirim akışı",
-        "Periyodik raporlama ve e-posta gönderimi",
-        "Belge işleme ve onay süreçleri",
-        "Webhook tetiklemeli içerik yayın pipeline'ı"
-      ],
-      "expand_stack": "n8n · OpenAI · REST APIs · Webhooks"
-    },
-    "internal_tools": {
-      "title": "Internal Tools",
-      "body": "İç yönetim panelleri, admin dashboard'ları ve CRUD sistemleri.",
-      "expand_intro": "Operasyon ekipleri için iç araçlar geliştiriyorum.",
-      "expand_items": [
-        "Admin paneller ve yönetim arayüzleri",
-        "İç gözlemleme ve raporlama",
-        "Manuel override ve operasyon kontrolleri",
-        "Role-based access ve audit log"
-      ],
-      "expand_stack": "Next.js · Supabase · tRPC · TypeScript"
-    },
-    "api_integrations": {
-      "title": "API Integrations",
-      "body": "Üçüncü-parti API orkestrasyonu ve webhook entegrasyonları.",
-      "expand_intro": "Birden fazla servisi tek koordine edici katman ardına gizleyen entegrasyon sistemleri kuruyorum.",
-      "expand_items": [
-        "REST + GraphQL + Webhook orkestrasyonu",
-        "Stripe, HubSpot, Slack, Sheets entegrasyonu",
-        "Rate limiting ve retry strategy",
-        "Idempotency ve event deduplication"
-      ],
-      "expand_stack": "TypeScript · n8n · REST · Webhooks"
+    "web_applications": {
+      "title": "Web Applications",
+      "body": "Next.js'ten backend'e, uçtan uca web uygulamaları ve ürünler."
     },
     "operational_dashboards": {
-      "title": "Operational Dashboards",
-      "body": "Real-time observability, metrik panelleri ve durum izleme.",
-      "expand_intro": "Operasyon ekipleri için canlı metrik ve durum panelleri kuruyorum.",
-      "expand_items": [
-        "Workflow run history ve error states",
-        "Real-time metrik ve KPI panelleri",
-        "Alerting ve anomaly detection",
-        "Custom log + audit görünümü"
-      ],
-      "expand_stack": "Next.js · Supabase · Recharts · n8n API"
+      "title": "Monitoring & Analytics",
+      "body": "Real-time metrik panelleri, durum izleme ve observability araçları."
     },
-    "product": {
-      "title": "Full-Stack Products",
-      "body": "Full-stack sistemler ve operational dashboards.",
-      "expand_intro": "Fikir aşamasından deploy sürecine kadar ürünün tamamını geliştiriyorum.",
-      "expand_items": [
-        "Operasyon dashboard'ları",
-        "İç yönetim panelleri",
-        "API tabanlı admin sistemleri",
-        "Müşteri odaklı web platformları"
-      ],
-      "expand_stack": "Next.js · TypeScript · Supabase · Vercel"
+    "ai_products": {
+      "title": "AI-Powered Products",
+      "body": "Akıllı içerik üretimi, veri çıkarımı ve öneri motorları — ürününüze entegre AI katmanları."
+    },
+    "workflow_automation": {
+      "title": "Workflow Automation",
+      "body": "Tekrarlayan iş süreçlerini tetikleyici tabanlı akışlara dönüştüren otomasyon sistemleri."
+    },
+    "internal_platforms": {
+      "title": "Internal Platforms",
+      "body": "Ekiplerinizin günlük operasyonunu yönettiği dahili araçlar, CRUD sistemleri ve admin panelleri."
+    },
+    "client_systems": {
+      "title": "Client Systems",
+      "body": "Müşteri alımından takip sürecine kadar uçtan uca çalışan CRM akışları ve portal sistemleri."
     }
   },
   "work": {
@@ -135,28 +89,28 @@
     },
     "archive": {
       "webhook-monitor": {
-        "title": "Webhook İzleyici",
-        "summary": "n8n workflow'larındaki webhook trafiğini, hata durumlarını ve retry pattern'lerini izleyen iç gözlemleme aracı. Failure alert'leri ve kümülatif latency ölçümü dahil."
+        "title": "Operations Monitoring Dashboard",
+        "summary": "Webhook trafiğini, hata durumlarını ve retry akışlarını canlı izleyen operasyon paneli. Sistemde ne olduğunu anlık görünür kılar."
       },
       "lead-intake-system": {
-        "title": "Lead Alım Sistemi",
-        "summary": "Form → CRM → bildirim akışını uçtan uca orchestre eden iç sistem. SLA timer, fallback path ve manuel override mekanizması dahil."
+        "title": "Lead Processing System",
+        "summary": "Formdan gelen potansiyel müşteriyi CRM'e aktaran, ekibi bilgilendiren ve takip sürecini başlatan uçtan uca akış."
       },
       "prompt-routing-tool": {
-        "title": "Prompt Yönlendirici",
-        "summary": "Cost, latency ve task tipine göre OpenAI, Anthropic ve local model'ler arasında otomatik prompt routing. Per-request profiling ve fallback chain dahil."
+        "title": "AI Workflow Router",
+        "summary": "Gelen talepleri maliyet, hız ve görev tipine göre doğru AI modeline yönlendiren akıllı dağıtım katmanı."
       },
       "agent-memory-layer": {
-        "title": "Ajan Hafıza Katmanı",
-        "summary": "pgvector + Supabase üstünde kalıcı conversation memory ve context retrieval. Threshold-based recall ve background summarization ile uzun-sürdüğü AI agent diyaloglarına bellek sağlar."
+        "title": "AI Knowledge Layer",
+        "summary": "AI asistanların önceki konuşmaları hatırlamasını sağlayan kalıcı bellek sistemi. Uzun süreli diyaloglarda bağlam kaybını önler."
       },
       "internal-ocr-utility": {
-        "title": "Dahili OCR Aracı",
-        "summary": "Belge tarama, OCR ve yapılandırılmış veri çıkarımı için iç araç. Form field detection, table parsing ve confidence scoring ile manuel veri girişini ortadan kaldırır."
+        "title": "Document Processing Tool",
+        "summary": "Kağıt belgeleri ve formları dijitalleştiren, yapılandırılmış veri çıkaran işleme aracı. Manuel veri girişini ortadan kaldırır."
       },
       "ai-parsing-sandbox": {
-        "title": "AI Parser Sandbox",
-        "summary": "Yapı bozuk dokümanlar, e-postalar ve HTML için parsing sandbox. Schema-first extraction ve regression test corpus ile parser doğruluğunu sürekli ölçer."
+        "title": "AI Data Extraction Pipeline",
+        "summary": "Düzensiz belgelerden ve e-postalardan yapılandırılmış veri çıkaran işleme hattı. Çıkarım doğruluğunu sürekli ölçer ve iyileştirir."
       }
     }
   },
@@ -169,8 +123,8 @@
   },
   "contact": {
     "eyebrow": "// open channel",
-    "heading": "Birlikte çalışalım.",
-    "body": "Şu an freelance, danışmanlık ya da ortak proje teklifleri için kapım açık. Bir fikir, bir soru ya da sadece bir merhaba — yaz gel.",
+    "heading": "Birlikte bir şey inşa edelim.",
+    "body": "Ürününüzü veya dahili aracınızı birlikte geliştirelim. Bir fikir, bir ihtiyaç ya da sadece bir merhaba — yaz gel.",
     "cta": "info@abdullahvcoskun.dev",
     "channels_label": "// channels",
     "channel_linkedin": "linkedin",
@@ -178,14 +132,14 @@
     "channel_whatsapp": "whatsapp",
     "studio_label": "// studio",
     "studio_brand": "CoskunTech",
-    "studio_post": " — independent systems studio.",
-    "studio_meta": "AI automation · internal tooling · workflow systems"
+    "studio_post": " — independent web & AI studio.",
+    "studio_meta": "web apps · AI integrations · automation"
   },
   "footer": {
     "credit_line_1_pre": "Inspired by the portfolio language of ",
     "credit_line_1_link": "Brittany Chiang",
-    "credit_line_2": "Reinterpreted for operational systems & AI workflows.",
-    "studio_line": "CoskunTech / systems studio",
+    "credit_line_2": "Reinterpreted for web products & AI systems.",
+    "studio_line": "CoskunTech / web & AI studio",
     "copyright": "© 2026 Abdullah V. Çoşkun"
   }
 }

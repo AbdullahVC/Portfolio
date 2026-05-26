@@ -26,7 +26,9 @@ export default function Hero() {
           style={{ ['--i' as string]: 2 }}
         >
           <span className="text-slate-500">{t('tagline_pre')}</span>
-          <span className="text-primary-400">{t('tagline_accent')}</span>
+          <span className="text-slate-100">{t('tagline_accent')}</span>
+          <span className="text-slate-100">{t('tagline_mid')}</span>
+          <span className="text-primary-400">{t('tagline_accent2')}</span>
           <span className="text-slate-100">{t('tagline_post')}</span>
         </p>
 
@@ -53,7 +55,7 @@ export default function Hero() {
         </div>
 
         <p className="reveal mt-8 font-mono text-[13px] text-slate-300 tracking-wide" style={{ ['--i' as string]: 5 }}>
-          {(['Next.js', 'AI Workflows', 'Automation', 'Internal Tools'] as const).map((tag, i, arr) => (
+          {(['Next.js · React', 'Node.js · Python', 'AI Integration', 'Workflow Automation'] as const).map((tag, i, arr) => (
             <span key={tag}>
               <span className="hover:text-slate-100 transition-colors cursor-default">{tag}</span>
               {i < arr.length - 1 && <span className="mx-3 text-slate-700">·</span>}

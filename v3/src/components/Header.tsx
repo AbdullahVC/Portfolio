@@ -64,15 +64,17 @@ export default function Header() {
       <nav className="sticky top-0 z-50 py-4 backdrop-blur bg-bg/85 border-b border-transparent">
         <div className="max-w-[1300px] mx-auto px-5 sm:px-8 lg:px-12 flex items-center justify-between gap-3 sm:gap-6">
           <div className="relative group">
-            <Link id="nav-logo" href="/" className="font-sans font-semibold text-xl text-primary tracking-tight">
+            <a id="nav-logo" href="#hero" className="font-sans font-semibold text-xl text-primary tracking-tight">
               {t('logo')}
-            </Link>
-            <span
-              aria-hidden="true"
-              className="hidden lg:block pointer-events-none absolute left-0 top-full mt-1.5 font-mono text-[10px] text-slate-500 tracking-[0.22em] uppercase whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+            </a>
+            <a
+              href="https://coskuntech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:block absolute left-0 top-full mt-1.5 font-mono text-[10px] text-slate-500 hover:text-primary tracking-[0.22em] uppercase whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-200"
             >
               coskuntech
-            </span>
+            </a>
           </div>
 
           <ul className="hidden lg:flex gap-8 items-center list-none">

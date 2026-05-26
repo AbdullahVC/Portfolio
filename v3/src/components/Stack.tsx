@@ -42,7 +42,7 @@ export default function Stack() {
               // active stack
             </span>
             <span className="font-mono text-[12.5px] text-slate-300 tracking-wide">
-              Next.js · n8n
+              Next.js · React · n8n
             </span>
           </div>
           <div className="flex items-baseline gap-3">

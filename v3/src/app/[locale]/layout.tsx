@@ -125,8 +125,10 @@ export default async function LocaleLayout({
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="bg-bg text-slate-300 font-sans">
-        <IntroLoader />
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <IntroLoader />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

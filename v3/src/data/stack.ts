@@ -24,11 +24,11 @@ export const stackCategories: StackCategory[] = [
 
 export const recentStack: string[] = [
   'Next.js',
+  'React',
   'TypeScript',
-  'Claude / Anthropic',
-  'n8n',
-  'OpenAI',
-  'PostgreSQL',
+  'Tailwind CSS',
   'Supabase',
+  'PostgreSQL',
+  'n8n',
   'Vercel'
 ];

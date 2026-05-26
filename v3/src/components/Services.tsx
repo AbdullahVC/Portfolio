@@ -316,14 +316,14 @@ function OperationalDashboardVisual() {
   );
 }
 
-/* ── Card data — user-ordered for narrative ───────────────── */
+/* ── Card data — product-first, systems-balanced ────────── */
 const SERVICES = [
-  { key: 'ai_systems'             as const, Visual: TopologyVisual             },
-  { key: 'automation'             as const, Visual: FlowVisual                 },
-  { key: 'internal_tools'         as const, Visual: InternalToolsVisual        },
-  { key: 'product'                as const, Visual: BrowserVisual              },
-  { key: 'api_integrations'       as const, Visual: ApiIntegrationVisual       },
+  { key: 'web_applications'      as const, Visual: BrowserVisual              },
   { key: 'operational_dashboards' as const, Visual: OperationalDashboardVisual },
+  { key: 'ai_products'           as const, Visual: TopologyVisual             },
+  { key: 'workflow_automation'   as const, Visual: FlowVisual                 },
+  { key: 'internal_platforms'    as const, Visual: InternalToolsVisual        },
+  { key: 'client_systems'       as const, Visual: ApiIntegrationVisual       },
 ];
 
 /* ── Component ───────────────────────────────────────────── */
