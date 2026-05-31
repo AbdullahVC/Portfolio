@@ -1,9 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { isOnlineNow } from '@/lib/status';
 
 export default function StatusLine() {
   const [time, setTime] = useState<string>('--:--');
+  const [online, setOnline] = useState<boolean>(true);
 
   useEffect(() => {
     const update = () => {
@@ -11,6 +13,7 @@ export default function StatusLine() {
       const hh = String(now.getHours()).padStart(2, '0');
       const mm = String(now.getMinutes()).padStart(2, '0');
       setTime(`${hh}:${mm}`);
+      setOnline(isOnlineNow(now));
     };
     update();
     const id = setInterval(update, 30_000);
@@ -25,7 +28,7 @@ export default function StatusLine() {
       >
         <span suppressHydrationWarning>LOCAL {time}</span>
         <span className="mx-2 text-slate-700">·</span>
-        <span>STATUS ONLINE</span>
+        <span suppressHydrationWarning>STATUS {online ? 'ONLINE' : 'OFFLINE'}</span>
       </p>
       <p
         className="reveal mt-1.5 font-mono text-[10.5px] text-slate-700 tracking-[0.18em]"

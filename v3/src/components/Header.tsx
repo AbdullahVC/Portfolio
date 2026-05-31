@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/routing';
+import { isOnlineNow } from '@/lib/status';
 
 const NAV_ITEMS = [
   { num: '01.', key: 'about' as const, href: '#about' },
@@ -203,10 +204,7 @@ function OnlineStatus() {
   const [online, setOnline] = useState<boolean>(true);
 
   useEffect(() => {
-    const update = () => {
-      const h = new Date().getHours();
-      setOnline(h >= 6 && h < 23);
-    };
+    const update = () => setOnline(isOnlineNow());
     update();
     const id = setInterval(update, 60_000);
     return () => clearInterval(id);
