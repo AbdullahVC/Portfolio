@@ -1,6 +1,6 @@
 {
   "nav": {
-    "logo": "AVC",
+    "logo": "AVÇ",
     "about": "About",
     "services": "Services",
     "work": "Work",
@@ -11,52 +11,54 @@
     "status_offline": "offline"
   },
   "hero": {
-    "eyebrow": "Hi, my name is",
-    "name": "Abdullah V. Coskun.",
+    "eyebrow": "full-stack AI developer",
+    "name": "Abdullah V. Çoşkun.",
     "tagline_pre": "I build ",
-    "tagline_accent": "AI-powered systems",
+    "tagline_accent": "web applications",
+    "tagline_mid": " and ",
+    "tagline_accent2": "AI systems",
     "tagline_post": ".",
-    "intro": "Focus: AI workflows, internal tools and automation systems. I build operational systems — from analysis to deployment.",
+    "intro": "From Next.js to the backend, from automation flows to AI integration — I build it end to end.",
     "cta": "See projects",
     "cta_secondary": "Get in touch"
   },
   "about": {
     "heading": "About",
-    "p1": "From classic web development to building AI-powered systems.",
-    "p2_pre": "Current focus: ",
-    "p2_accent": "workflow automation and internal tooling",
-    "p2_post": " — operational systems that reduce manual work.",
-    "p3": "I build products end-to-end: from API integrations to deployment.",
-    "p4": "Working languages: English, German, Turkish. Focus on the DACH region and Turkey.",
+    "p1": "I turn business processes into software. I build web applications, dashboards, automation flows and AI-powered tools.",
+    "p2_pre": "Today my focus is ",
+    "p2_accent": "products people actually use",
+    "p2_post": " — systematizing repetitive work, making data visible.",
+    "p3": "From interface to backend, from API integration to deployment, I build the whole system end to end.",
+    "p4": "I work in Turkish, German and English. I focus on digital projects in Turkey and the DACH region.",
     "focus_label": "// focus",
-    "focus_items": ["AI Workflows", "Automation Systems", "Full-Stack Products", "Internal Tooling"],
-    "photo_alt": "Abdullah Coskun"
+    "focus_items": ["Web Applications", "AI Agents", "AI Integrations", "Workflow Automation"],
+    "photo_alt": "Abdullah Çoşkun"
   },
   "services": {
     "heading": "What I Build",
-    "ai_systems": {
-      "title": "AI Systems",
-      "body": "Orchestrated AI workflows and operational systems for complex business processes."
-    },
-    "automation": {
-      "title": "Automation Workflows",
-      "body": "Trigger-based automation and event-driven workflows."
-    },
-    "internal_tools": {
-      "title": "Internal Tools",
-      "body": "Admin panels, management dashboards and CRUD systems for operations teams."
-    },
-    "api_integrations": {
-      "title": "API Integrations",
-      "body": "Third-party API orchestration — webhooks, retry, and rate-limiting."
+    "web_applications": {
+      "title": "Web Applications",
+      "body": "End-to-end web applications and products, from Next.js to the backend."
     },
     "operational_dashboards": {
-      "title": "Operational Dashboards",
-      "body": "Real-time observability, status monitoring and KPI visualization."
+      "title": "Monitoring & Analytics",
+      "body": "Real-time metric panels, status monitoring and observability tools."
     },
-    "product": {
-      "title": "Full-Stack Products",
-      "body": "End-to-end web platforms and admin systems — frontend to database."
+    "ai_products": {
+      "title": "AI-Powered Products",
+      "body": "Smart content generation, data extraction and recommendation engines — AI layers integrated into your product."
+    },
+    "workflow_automation": {
+      "title": "Workflow Automation",
+      "body": "Automation systems that turn repetitive business processes into trigger-based flows."
+    },
+    "internal_platforms": {
+      "title": "Internal Platforms",
+      "body": "Internal tools, CRUD systems and admin panels where your teams run daily operations."
+    },
+    "client_systems": {
+      "title": "Client Systems",
+      "body": "CRM flows and portal systems that run end to end, from client intake to follow-up."
     }
   },
   "work": {
@@ -71,18 +73,8 @@
     "featured": {
       "isbn-resale-automation": {
         "title": "ISBN Resale Automation",
-        "category": "automation system",
-        "description": "Automated price comparison for ISBN-based book resales — checks five second-hand platforms in real time and triggers the sale when conditions match."
-      },
-      "workflow-control-panel": {
-        "title": "Workflow Control Panel",
-        "category": "internal operations",
-        "description": "Internal panel for n8n run history, error states and manual triggers — operational control and observability across all automations."
-      },
-      "portfolio-hub": {
-        "title": "Portfolio Hub",
-        "category": "personal system",
-        "description": "Multilingual portfolio platform built with Next.js and TypeScript — TR · DE · EN, snap scroll, terminal aesthetic."
+        "category": "workflow automation",
+        "description": "A workflow that compares scanned ISBN data across five second-hand book platforms and triggers a sale when conditions are right."
       },
       "gratis-buecher-abholung": {
         "title": "Gratis Bücher Abholung",
@@ -97,28 +89,28 @@
     },
     "archive": {
       "webhook-monitor": {
-        "title": "Webhook Monitor",
-        "summary": "Internal tool for tracking webhook traffic, error states and retry patterns in n8n pipelines. With failure alerts and cumulative latency measurement."
+        "title": "Operations Monitoring Dashboard",
+        "summary": "An operations panel that tracks webhook traffic, error states and retry flows live. Makes what's happening in the system visible at a glance."
       },
       "lead-intake-system": {
-        "title": "Lead Intake System",
-        "summary": "End-to-end orchestration of the form → CRM → notification path. With SLA timer, fallback routes and manual override."
+        "title": "Lead Processing System",
+        "summary": "An end-to-end flow that pushes form leads into the CRM, notifies the team and kicks off the follow-up process."
       },
       "prompt-routing-tool": {
-        "title": "Prompt Router",
-        "summary": "Automated routing between OpenAI, Anthropic and local models — based on cost, latency and task type. With per-request profiling and fallback chain."
+        "title": "AI Workflow Router",
+        "summary": "A smart routing layer that directs incoming requests to the right AI model based on cost, speed and task type."
       },
       "agent-memory-layer": {
-        "title": "Agent Memory Layer",
-        "summary": "Persistent conversation memory and context retrieval on pgvector + Supabase. Threshold-based recall and background summarization for long-running AI dialogues."
+        "title": "AI Knowledge Layer",
+        "summary": "A persistent memory system that lets AI assistants remember past conversations. Prevents context loss in long-running dialogues."
       },
       "internal-ocr-utility": {
-        "title": "Internal OCR Tool",
-        "summary": "Document scanning, OCR and structured data extraction. Form-field detection, table parsing and confidence scoring eliminate manual data entry."
+        "title": "Document Processing Tool",
+        "summary": "A processing tool that digitizes paper documents and forms and extracts structured data. Eliminates manual data entry."
       },
       "ai-parsing-sandbox": {
-        "title": "AI Parser Sandbox",
-        "summary": "Sandbox for unstructured documents, emails and HTML. Schema-first extraction and regression-test corpus continuously measure parser accuracy."
+        "title": "AI Data Extraction Pipeline",
+        "summary": "A pipeline that extracts structured data from messy documents and emails. Continuously measures and improves extraction accuracy."
       }
     }
   },
@@ -131,8 +123,8 @@
   },
   "contact": {
     "eyebrow": "// open channel",
-    "heading": "Let's work together.",
-    "body": "Open to freelance projects, technical consulting and long-term collaboration. An idea, a question, or just a hello — drop me a line.",
+    "heading": "Let's build something together.",
+    "body": "Let's build your product or internal tool together. An idea, a need, or just a hello — drop me a line.",
     "cta": "info@abdullahvcoskun.dev",
     "channels_label": "// channels",
     "channel_linkedin": "linkedin",
@@ -140,14 +132,14 @@
     "channel_whatsapp": "whatsapp",
     "studio_label": "// studio",
     "studio_brand": "CoskunTech",
-    "studio_post": " — independent systems studio.",
-    "studio_meta": "AI automation · internal tooling · workflow systems"
+    "studio_post": " — independent web & AI studio.",
+    "studio_meta": "web apps · AI integrations · automation"
   },
   "footer": {
-    "credit_line_1_pre": "Design inspired by ",
+    "credit_line_1_pre": "Inspired by the portfolio language of ",
     "credit_line_1_link": "Brittany Chiang",
-    "credit_line_2": "Built with Next.js, TypeScript and Tailwind CSS.",
-    "studio_line": "CoskunTech / systems studio",
-    "copyright": "© 2026 Abdullah V. Coskun"
+    "credit_line_2": "Reinterpreted for web products & AI systems.",
+    "studio_line": "CoskunTech / web & AI studio",
+    "copyright": "© 2026 Abdullah V. Çoşkun"
   }
 }

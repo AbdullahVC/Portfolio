@@ -76,16 +76,6 @@
         "category": "workflow automation",
         "description": "Tarayıcıdan alınan ISBN verisini 5 farklı ikinci el kitap platformunda otomatik fiyat karşılaştıran ve uygun koşulda satışı tetikleyen workflow."
       },
-      "workflow-control-panel": {
-        "title": "Workflow Control Panel",
-        "category": "internal ops system",
-        "description": "n8n run history, error states ve manuel trigger için iç yönetim paneli — workflow observability ve operasyonel kontrol."
-      },
-      "portfolio-hub": {
-        "title": "Portfolio Hub",
-        "category": "personal system",
-        "description": "Next.js + TypeScript ile çok dilli portföy platformu — TR · DE · EN, snap scroll, terminal aesthetic."
-      },
       "gratis-buecher-abholung": {
         "title": "Gratis Bücher Abholung",
         "category": "landing page",
