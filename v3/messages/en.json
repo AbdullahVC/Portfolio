@@ -83,6 +83,16 @@
         "title": "Portfolio Hub",
         "category": "personal system",
         "description": "Multilingual portfolio platform built with Next.js and TypeScript — TR · DE · EN, snap scroll, terminal aesthetic."
+      },
+      "gratis-buecher-abholung": {
+        "title": "Gratis Bücher Abholung",
+        "category": "landing page",
+        "description": "Conversion-focused landing page for free book collection in Switzerland — request form, WhatsApp, legal pages. Live on its own domain."
+      },
+      "coskuntech": {
+        "title": "CoskunTech",
+        "category": "agency site",
+        "description": "Agency site for tradespeople and small businesses in Germany — web, SEO/GEO and automation, trilingual (DE · TR · EN), Next.js."
       }
     },
     "archive": {

@@ -53,7 +53,7 @@ html {
   scroll-snap-align: start;
   height: calc(100svh - var(--header-h));
   overflow-y: auto;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }

@@ -64,6 +64,21 @@ export const featuredProjects: FeaturedProject[] = [
       { key: 'build',    value: 'vercel · auto' },
     ],
   },
+  {
+    slug: 'gratis-buecher-abholung',
+    stack: ['Next.js', 'Tailwind CSS', 'SEO', 'Formular'],
+    live: 'https://www.gratisbuecherabholung.ch',
+    previewImage: '/projects/gratis-buecher-abholung.png',
+    status: 'live',
+    icon: 'globe',
+  },
+  {
+    slug: 'coskuntech',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'next-intl'],
+    previewImage: '/projects/coskuntech.png',
+    status: 'in-progress',
+    icon: 'globe',
+  },
 ];
 
 export const archiveProjects: ArchiveProject[] = [

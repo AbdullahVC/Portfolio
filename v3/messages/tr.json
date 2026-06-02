@@ -85,6 +85,16 @@
         "title": "Portfolio Hub",
         "category": "personal system",
         "description": "Next.js + TypeScript ile çok dilli portföy platformu — TR · DE · EN, snap scroll, terminal aesthetic."
+      },
+      "gratis-buecher-abholung": {
+        "title": "Gratis Bücher Abholung",
+        "category": "landing page",
+        "description": "İsviçre'de ücretsiz kitap toplama için dönüşüm odaklı landing — talep formu, WhatsApp ve yasal sayfalar. Kendi alan adında canlı."
+      },
+      "coskuntech": {
+        "title": "CoskunTech",
+        "category": "agency site",
+        "description": "Almanya'daki esnaf ve küçük işletmeler için web, SEO/GEO ve otomasyon ajansı sitesi — üç dilli (DE · TR · EN), turkuaz kimlik, Next.js."
       }
     },
     "archive": {
