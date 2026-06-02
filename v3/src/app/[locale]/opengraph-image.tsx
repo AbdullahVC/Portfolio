@@ -1,13 +1,13 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Abdullah V. Coskun — AI-Native Full-Stack Developer';
+export const alt = 'Abdullah V. Çoşkun — Full-Stack Web & AI Developer';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
 export default async function OGImage({ params }: { params: { locale: string } }) {
   const { locale } = params;
-  const name = locale === 'tr' ? 'Abdullah V. Çoşkun' : 'Abdullah V. Coskun';
+  const name = 'Abdullah V. Çoşkun';
 
   return new ImageResponse(
     (
@@ -31,13 +31,13 @@ export default async function OGImage({ params }: { params: { locale: string } }
           }}
         >
           <span style={{ color: '#38BDF8', fontSize: '24px', letterSpacing: '0.2em' }}>
-            {'> AI SYSTEMS BUILDER'}
+            {'> FULL-STACK WEB & AI DEVELOPER'}
           </span>
           <span style={{ color: '#CCD6F6', fontSize: '64px', fontWeight: 700, letterSpacing: '-0.02em' }}>
             {name}
           </span>
           <span style={{ color: '#8892B0', fontSize: '28px', lineHeight: 1.5 }}>
-            AI Workflows · Automation Systems · Full-Stack Products · Internal Tooling
+            Web Applications · AI Systems · Dashboards · Automation
           </span>
         </div>
         <div
@@ -63,7 +63,7 @@ export default async function OGImage({ params }: { params: { locale: string } }
             letterSpacing: '-0.02em',
           }}
         >
-          AVC
+          AVÇ
         </div>
       </div>
     ),

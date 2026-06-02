@@ -21,8 +21,8 @@ const mono = JetBrains_Mono({
   display: 'swap'
 });
 
-function getNameForLocale(locale: string) {
-  return locale === 'tr' ? 'Abdullah V. Çoşkun' : 'Abdullah V. Coskun';
+function getNameForLocale(_locale: string) {
+  return 'Abdullah V. Çoşkun';
 }
 
 const descriptions: Record<string, string> = {
@@ -39,11 +39,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   return {
     metadataBase: new URL(DOMAIN),
-    title: `${name} — AI-Native Full-Stack Developer`,
+    title: `${name} — Full-Stack Web & AI Developer`,
     description,
     keywords: ['AI developer', 'full-stack developer', 'workflow automation', 'n8n', 'Next.js', 'internal tools', 'DACH', 'Turkey', 'freelance developer'],
-    authors: [{ name: 'Abdullah V. Coskun', url: DOMAIN }],
-    creator: 'Abdullah V. Coskun',
+    authors: [{ name: 'Abdullah V. Çoşkun', url: DOMAIN }],
+    creator: 'Abdullah V. Çoşkun',
     icons: {
       icon: [
         { url: '/favicon.svg', type: 'image/svg+xml' },
@@ -61,22 +61,22 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       },
     },
     openGraph: {
-      title: `${name} — AI-Native Full-Stack Developer`,
+      title: `${name} — Full-Stack Web & AI Developer`,
       description,
       url,
-      siteName: 'Abdullah V. Coskun',
+      siteName: 'Abdullah V. Çoşkun',
       locale: locale === 'tr' ? 'tr_TR' : locale === 'de' ? 'de_DE' : 'en_US',
       type: 'website',
       images: [{
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: `${name} — AI-Native Full-Stack Developer`,
+        alt: `${name} — Full-Stack Web & AI Developer`,
       }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${name} — AI-Native Full-Stack Developer`,
+      title: `${name} — Full-Stack Web & AI Developer`,
       description,
       images: ['/og-image.png'],
     },
