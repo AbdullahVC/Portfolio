@@ -141,5 +141,42 @@
     "credit_line_2": "Reinterpreted for web products & AI systems.",
     "studio_line": "CoskunTech / web & AI studio",
     "copyright": "© 2026 Abdullah V. Çoşkun"
+  },
+  "legal": {
+    "back": "Back to home",
+    "impressum": {
+      "nav_label": "Legal Notice",
+      "title": "Legal Notice (Impressum)",
+      "operator_label": "Site Owner",
+      "country": "Turkey",
+      "contact_label": "Contact",
+      "email_label": "Email",
+      "phone_label": "Phone",
+      "tax_label": "Tax ID",
+      "disclaimer_heading": "Liability",
+      "disclaimer_body": "This website is a personal portfolio. Its content has been prepared with care; however, no guarantee is given for its timeliness or accuracy. The operators of linked external sites are solely responsible for their content."
+    },
+    "datenschutz": {
+      "nav_label": "Privacy",
+      "title": "Privacy Policy",
+      "updated": "Last updated: June 2026",
+      "intro": "Personal data is processed on this website only to the extent technically necessary. Below we explain which data is processed and why.",
+      "controller_heading": "Controller",
+      "controller_body": "The controller is the site owner named in the Legal Notice. For questions: {email}",
+      "hosting_heading": "Hosting",
+      "hosting_body": "This website is hosted by Vercel Inc. (USA). When you visit the site, technically necessary data is processed on Vercel's servers and may be transferred to the USA. Vercel processes this data on the basis of the standard contractual clauses.",
+      "logs_heading": "Server Logs",
+      "logs_body": "On each visit, the server automatically and temporarily records the following technical data: IP address, date/time, requested page, and browser and operating-system information. This data is processed to keep the site secure and running reliably and is not used to build personal profiles.",
+      "contact_heading": "Contact",
+      "contact_body": "When you contact us by email ({email}), the information you provide is processed to handle your request. There is no server-side form collecting data on this website.",
+      "cookies_heading": "Cookies",
+      "cookies_body": "This website does not use cookies and does not write any tracking data to your browser.",
+      "tracking_heading": "Analytics and Tracking",
+      "tracking_body": "No third-party analytics, advertising, or tracking services are used on this website. Fonts are hosted locally on our server; no requests are sent to external services such as Google Fonts.",
+      "rights_heading": "Your Rights",
+      "rights_body": "Under applicable data protection law (GDPR / KVKK), you have the right to access, rectification, erasure, restriction of processing, and objection. To exercise these rights, contact us at {email}.",
+      "changes_heading": "Changes",
+      "changes_body": "This statement may be updated where legal requirements or changes to the website make it necessary. The current version is always available on this page."
+    }
   }
 }

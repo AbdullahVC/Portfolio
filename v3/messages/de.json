@@ -141,5 +141,42 @@
     "credit_line_2": "Neu interpretiert für Web-Produkte & KI-Systeme.",
     "studio_line": "CoskunTech / web & AI studio",
     "copyright": "© 2026 Abdullah V. Çoşkun"
+  },
+  "legal": {
+    "back": "Zur Startseite",
+    "impressum": {
+      "nav_label": "Impressum",
+      "title": "Impressum",
+      "operator_label": "Anbieter",
+      "country": "Türkei",
+      "contact_label": "Kontakt",
+      "email_label": "E-Mail",
+      "phone_label": "Telefon",
+      "tax_label": "Steuernummer",
+      "disclaimer_heading": "Haftung",
+      "disclaimer_body": "Diese Website ist ein persönliches Portfolio. Die Inhalte wurden mit Sorgfalt erstellt; für Aktualität und Richtigkeit wird jedoch keine Gewähr übernommen. Für die Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich."
+    },
+    "datenschutz": {
+      "nav_label": "Datenschutz",
+      "title": "Datenschutzerklärung",
+      "updated": "Stand: Juni 2026",
+      "intro": "Personenbezogene Daten werden auf dieser Website nur im technisch notwendigen Umfang verarbeitet. Nachfolgend erläutern wir, welche Daten zu welchem Zweck verarbeitet werden.",
+      "controller_heading": "Verantwortlicher",
+      "controller_body": "Verantwortlich ist der im Impressum genannte Anbieter. Bei Fragen: {email}",
+      "hosting_heading": "Hosting",
+      "hosting_body": "Diese Website wird bei Vercel Inc. (USA) gehostet. Beim Besuch der Website werden technisch notwendige Daten auf Servern von Vercel verarbeitet und ggf. in die USA übermittelt. Vercel verarbeitet diese Daten auf Grundlage der Standardvertragsklauseln.",
+      "logs_heading": "Server-Logfiles",
+      "logs_body": "Bei jedem Zugriff speichert der Server automatisch und vorübergehend folgende technische Daten: IP-Adresse, Datum/Uhrzeit, aufgerufene Seite sowie Browser- und Betriebssystem-Informationen. Diese Daten dienen dem sicheren und störungsfreien Betrieb der Website und werden nicht zur Profilbildung verwendet.",
+      "contact_heading": "Kontaktaufnahme",
+      "contact_body": "Wenn Sie uns per E-Mail ({email}) kontaktieren, werden Ihre Angaben zur Bearbeitung Ihrer Anfrage verarbeitet. Ein serverseitiges Formular zur Datenerhebung gibt es auf dieser Website nicht.",
+      "cookies_heading": "Cookies",
+      "cookies_body": "Diese Website verwendet keine Cookies und speichert keine Tracking-Daten in Ihrem Browser.",
+      "tracking_heading": "Analyse und Tracking",
+      "tracking_body": "Auf dieser Website werden keine Analyse-, Werbe- oder Tracking-Dienste Dritter eingesetzt. Schriftarten werden lokal auf unserem Server gehostet; es werden keine Anfragen an externe Dienste wie Google Fonts gesendet.",
+      "rights_heading": "Ihre Rechte",
+      "rights_body": "Nach geltendem Datenschutzrecht (DSGVO / KVKK) haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Widerspruch. Zur Ausübung dieser Rechte erreichen Sie uns unter {email}.",
+      "changes_heading": "Änderungen",
+      "changes_body": "Diese Erklärung kann angepasst werden, wenn gesetzliche Vorgaben oder Änderungen der Website dies erfordern. Die aktuelle Fassung ist stets auf dieser Seite verfügbar."
+    }
   }
 }

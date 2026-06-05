@@ -1,7 +1,9 @@
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export default function Footer() {
   const t = useTranslations('footer');
+  const tl = useTranslations('legal');
 
   return (
     <footer className="footer-snap py-12 text-center font-mono">
@@ -24,9 +26,18 @@ export default function Footer() {
         <p className="font-mono text-[11.5px] text-slate-500 tracking-[0.06em] mb-4">
           {t('studio_line')}
         </p>
-        <p className="text-[11px] text-slate-600 tracking-[0.18em] uppercase">
+        <p className="text-[11px] text-slate-600 tracking-[0.18em] uppercase mb-4">
           {t('copyright')}
         </p>
+        <nav className="flex items-center justify-center gap-5 font-mono text-[11.5px]">
+          <Link href="/impressum" className="text-slate-500 hover:text-primary transition-colors">
+            {tl('impressum.nav_label')}
+          </Link>
+          <span aria-hidden className="text-slate-700">·</span>
+          <Link href="/datenschutz" className="text-slate-500 hover:text-primary transition-colors">
+            {tl('datenschutz.nav_label')}
+          </Link>
+        </nav>
       </div>
     </footer>
   );

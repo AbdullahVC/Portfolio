@@ -14,5 +14,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   }));
 
+  const legalPaths = ['impressum', 'datenschutz'];
+  for (const path of legalPaths) {
+    for (const locale of locales) {
+      entries.push({
+        url: `${DOMAIN}/${locale}/${path}`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 0.2,
+        alternates: {
+          languages: Object.fromEntries(locales.map((l) => [l, `${DOMAIN}/${l}/${path}`])),
+        },
+      });
+    }
+  }
+
   return entries;
 }

@@ -141,5 +141,42 @@
     "credit_line_2": "Reinterpreted for web products & AI systems.",
     "studio_line": "CoskunTech / web & AI studio",
     "copyright": "© 2026 Abdullah V. Çoşkun"
+  },
+  "legal": {
+    "back": "Ana sayfaya dön",
+    "impressum": {
+      "nav_label": "Yasal Bilgiler",
+      "title": "Yasal Bilgiler (Impressum)",
+      "operator_label": "Site Sahibi",
+      "country": "Türkiye",
+      "contact_label": "İletişim",
+      "email_label": "E-posta",
+      "phone_label": "Telefon",
+      "tax_label": "Vergi No",
+      "disclaimer_heading": "Sorumluluk",
+      "disclaimer_body": "Bu site kişisel bir portföydür. İçerikler özenle hazırlanmıştır; yine de güncellik ve doğruluk için garanti verilmez. Dış bağlantıların içeriğinden ilgili sitelerin sahipleri sorumludur."
+    },
+    "datenschutz": {
+      "nav_label": "Gizlilik",
+      "title": "Gizlilik Politikası",
+      "updated": "Son güncelleme: Haziran 2026",
+      "intro": "Bu sitede kişisel verileriniz yalnızca teknik olarak gerekli olduğu ölçüde işlenir. Aşağıda hangi verilerin, neden işlendiğini açıklıyoruz.",
+      "controller_heading": "Veri Sorumlusu",
+      "controller_body": "Veri sorumlusu, Impressum sayfasında belirtilen site sahibidir. Sorularınız için: {email}",
+      "hosting_heading": "Barındırma (Hosting)",
+      "hosting_body": "Site, Vercel Inc. (ABD) altyapısında barındırılır. Siteyi ziyaret ettiğinizde teknik olarak gerekli veriler Vercel sunucularında işlenir ve ABD'ye aktarılabilir. Vercel bu verileri standart sözleşme hükümleri kapsamında işler.",
+      "logs_heading": "Sunucu Günlükleri",
+      "logs_body": "Her erişimde sunucu otomatik ve geçici olarak şu teknik verileri kaydeder: IP adresi, tarih/saat, çağrılan sayfa, tarayıcı ve işletim sistemi bilgisi. Bu veriler sitenin güvenli ve hatasız çalışması için işlenir; kişisel profil oluşturmak için kullanılmaz.",
+      "contact_heading": "İletişim",
+      "contact_body": "Bize e-posta ({email}) ile ulaştığınızda, verdiğiniz bilgiler talebinizi yanıtlamak için işlenir. Sitede sunucu tarafında veri toplayan bir form bulunmaz.",
+      "cookies_heading": "Çerezler",
+      "cookies_body": "Bu site çerez kullanmaz ve tarayıcınıza takip amaçlı hiçbir veri yazmaz.",
+      "tracking_heading": "Analitik ve İzleme",
+      "tracking_body": "Bu sitede üçüncü taraf analitik, reklam veya izleme aracı kullanılmaz. Yazı tipleri kendi sunucumuzda barındırılır; Google Fonts gibi harici servislere istek gönderilmez.",
+      "rights_heading": "Haklarınız",
+      "rights_body": "Yürürlükteki veri koruma mevzuatı (KVKK / GDPR) kapsamında; verilerinize erişim, düzeltme, silme, işlemeyi kısıtlama ve itiraz etme haklarına sahipsiniz. Bu hakları kullanmak için {email} adresinden bize ulaşabilirsiniz.",
+      "changes_heading": "Güncellemeler",
+      "changes_body": "Bu metin, yasal gereklilikler veya sitedeki değişiklikler doğrultusunda güncellenebilir. Güncel sürüm her zaman bu sayfada yayımlanır."
+    }
   }
 }
