@@ -1,6 +1,6 @@
 import { useLocale } from 'next-intl';
 
-const DOMAIN = 'https://abdullahvcoskun.dev';
+const DOMAIN = 'https://www.abdullahvcoskun.dev';
 
 export default function JsonLd() {
   const locale = useLocale();

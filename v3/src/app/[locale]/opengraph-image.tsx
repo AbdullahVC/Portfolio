@@ -7,7 +7,8 @@ export const contentType = 'image/png';
 
 export default async function OGImage({ params }: { params: { locale: string } }) {
   const { locale } = params;
-  const name = 'Abdullah V. Çoşkun';
+  const name = locale === 'tr' ? 'Abdullah V. Çoşkun' : 'Abdullah V. Coskun';
+  const badge = locale === 'tr' ? 'AVÇ' : 'AVC';
 
   return new ImageResponse(
     (
@@ -63,7 +64,7 @@ export default async function OGImage({ params }: { params: { locale: string } }
             letterSpacing: '-0.02em',
           }}
         >
-          AVÇ
+          {badge}
         </div>
       </div>
     ),

@@ -18,10 +18,10 @@ export default function Contact() {
       <div className="max-w-content mx-auto px-5 sm:px-8 lg:px-12 w-full">
         {/* Header parity with nav */}
         <div className="contact-num flex items-baseline gap-3 mb-10">
-          <span className="font-mono text-lg text-primary font-medium">05.</span>
-          <span className="font-sans text-2xl md:text-3xl font-semibold text-slate-100 tracking-tight">
+          <span className="font-mono text-lg text-primary font-medium" aria-hidden="true">05.</span>
+          <h2 className="font-sans text-2xl md:text-3xl font-semibold text-slate-100 tracking-tight m-0">
             {tNav('contact')}
-          </span>
+          </h2>
           <span className="contact-header-line" />
         </div>
 
@@ -31,9 +31,9 @@ export default function Contact() {
         </p>
 
         {/* Heading */}
-        <h2 className="font-sans text-4xl md:text-5xl lg:text-6xl font-semibold text-slate-100 mb-6 tracking-tight leading-[1.05]">
+        <h3 className="font-sans text-4xl md:text-5xl lg:text-6xl font-semibold text-slate-100 mb-6 tracking-tight leading-[1.05]">
           {t('heading')}
-        </h2>
+        </h3>
 
         {/* Body */}
         <p className="max-w-[58ch] text-[16px] md:text-[17px] leading-[1.6] text-slate-300 mb-10">

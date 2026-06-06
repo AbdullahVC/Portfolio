@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import LegalShell from '@/components/LegalShell';
 import { OPERATOR } from '@/config/legal';
 
-const DOMAIN = 'https://abdullahvcoskun.dev';
+const DOMAIN = 'https://www.abdullahvcoskun.dev';
 
 const SECTIONS = [
   'controller',
@@ -23,8 +23,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'legal.datenschutz' });
+  const brandName = locale === 'tr' ? 'Abdullah V. Çoşkun' : 'Abdullah V. Coskun';
   return {
-    title: `${t('title')} — Abdullah V. Çoşkun`,
+    title: `${t('title')} — ${brandName}`,
     alternates: { canonical: `${DOMAIN}/${locale}/datenschutz` },
     robots: { index: true, follow: true },
   };

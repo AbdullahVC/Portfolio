@@ -154,6 +154,14 @@ body {
   50% { opacity: 0.7; transform: translateY(2px); }
 }
 
+/* Global focus coverage — every interactive element gets a high-contrast ring.
+   :where() keeps specificity 0 so .focus-tactical (offset 4) still wins where set. */
+:where(a, button, input, textarea, select, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 /* Tactical focus ring — sharp primary outline */
 .focus-tactical:focus-visible {
   outline: 2px solid var(--color-primary);

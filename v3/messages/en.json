@@ -1,6 +1,6 @@
 {
   "nav": {
-    "logo": "AVÇ",
+    "logo": "AVC",
     "about": "About",
     "services": "Services",
     "work": "Work",
@@ -12,7 +12,7 @@
   },
   "hero": {
     "eyebrow": "full-stack AI developer",
-    "name": "Abdullah V. Çoşkun.",
+    "name": "Abdullah V. Coskun.",
     "tagline_pre": "I build ",
     "tagline_accent": "web applications",
     "tagline_mid": " and ",
@@ -32,7 +32,7 @@
     "p4": "I work in Turkish, German and English. I focus on digital projects in Turkey and the DACH region.",
     "focus_label": "// focus",
     "focus_items": ["Web Applications", "AI Agents", "AI Integrations", "Workflow Automation"],
-    "photo_alt": "Abdullah Çoşkun"
+    "photo_alt": "Abdullah Coskun"
   },
   "services": {
     "heading": "What I Build",
@@ -140,7 +140,7 @@
     "credit_line_1_link": "Brittany Chiang",
     "credit_line_2": "Reinterpreted for web products & AI systems.",
     "studio_line": "CoskunTech / web & AI studio",
-    "copyright": "© 2026 Abdullah V. Çoşkun"
+    "copyright": "© 2026 Abdullah V. Coskun"
   },
   "legal": {
     "back": "Back to home",

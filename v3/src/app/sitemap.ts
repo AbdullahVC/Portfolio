@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const DOMAIN = 'https://abdullahvcoskun.dev';
+const DOMAIN = 'https://www.abdullahvcoskun.dev';
 const locales = ['tr', 'en', 'de'];
 
 export default function sitemap(): MetadataRoute.Sitemap {

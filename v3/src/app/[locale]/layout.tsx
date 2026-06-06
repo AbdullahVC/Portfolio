@@ -7,7 +7,7 @@ import { routing } from '@/i18n/routing';
 import IntroLoader from '@/components/IntroLoader';
 import '../globals.css';
 
-const DOMAIN = 'https://abdullahvcoskun.dev';
+const DOMAIN = 'https://www.abdullahvcoskun.dev';
 
 const sans = Space_Grotesk({
   subsets: ['latin', 'latin-ext'],
@@ -21,8 +21,9 @@ const mono = JetBrains_Mono({
   display: 'swap'
 });
 
-function getNameForLocale(_locale: string) {
-  return 'Abdullah V. Çoşkun';
+function getNameForLocale(locale: string) {
+  // TR keeps Turkish diacritics; EN/DE use the latinised form (no ç/ş).
+  return locale === 'tr' ? 'Abdullah V. Çoşkun' : 'Abdullah V. Coskun';
 }
 
 const descriptions: Record<string, string> = {
@@ -42,8 +43,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: `${name} — Full-Stack Web & AI Developer`,
     description,
     keywords: ['AI developer', 'full-stack developer', 'workflow automation', 'n8n', 'Next.js', 'internal tools', 'DACH', 'Turkey', 'freelance developer'],
-    authors: [{ name: 'Abdullah V. Çoşkun', url: DOMAIN }],
-    creator: 'Abdullah V. Çoşkun',
+    authors: [{ name, url: DOMAIN }],
+    creator: name,
     icons: {
       icon: [
         { url: '/favicon.svg', type: 'image/svg+xml' },
@@ -64,7 +65,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: `${name} — Full-Stack Web & AI Developer`,
       description,
       url,
-      siteName: 'Abdullah V. Çoşkun',
+      siteName: name,
       locale: locale === 'tr' ? 'tr_TR' : locale === 'de' ? 'de_DE' : 'en_US',
       type: 'website',
       images: [{
